@@ -11,8 +11,10 @@ const Title = styled.div`
 `;
 const SizeTitle = styled(Row)`
   padding: 20px 0 14px;
-  color: #434a59;
+  color: #F5F5F5;
 `;
+
+const language = (localStorage.getItem('language')? localStorage.getItem('language'): 'es');
 
 export default function PublicTrades({ smallScreen }) {
   const { baseCurrency, quoteCurrency, market } = useMarket();
@@ -30,14 +32,14 @@ export default function PublicTrades({ smallScreen }) {
             }
       }
     >
-      <Title>Recent Market trades</Title>
+      <Title>{language === 'en' ? 'Recent Market trades': 'Operaciones recientes del mercado'}</Title>
       <SizeTitle>
-        <Col span={8}>Price ({quoteCurrency}) </Col>
+      <Col span={8}>{language === 'en' ? 'Price': 'Precio'} ({quoteCurrency}) </Col>
         <Col span={8} style={{ textAlign: 'right' }}>
-          Size ({baseCurrency})
+        {language === 'en' ? 'Size': 'Tamaño'} ({baseCurrency})
         </Col>
         <Col span={8} style={{ textAlign: 'right' }}>
-          Time
+        {language === 'en' ? 'Time': 'Hora'}
         </Col>
       </SizeTitle>
       {!!trades && loaded && (
@@ -56,7 +58,7 @@ export default function PublicTrades({ smallScreen }) {
               <Col
                 span={8}
                 style={{
-                  color: trade.side === 'buy' ? '#41C77A' : '#F23B69',
+                  color: trade.side === 'buy' ? '#00BA13' : '#B80009',
                 }}
               >
                 {market?.tickSize && !isNaN(trade.price)
@@ -72,7 +74,7 @@ export default function PublicTrades({ smallScreen }) {
                     )
                   : trade.size}
               </Col>
-              <Col span={8} style={{ textAlign: 'right', color: '#434a59' }}>
+              <Col span={8} style={{ textAlign: 'right', color: '#E0E0E0' }}>
                 {trade.time && new Date(trade.time).toLocaleTimeString()}
               </Col>
             </Row>

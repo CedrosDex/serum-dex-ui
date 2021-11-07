@@ -32,13 +32,16 @@ const { Title } = Typography;
 const ActionButton = styled(Button)`
   color: #2abdd2;
   background-color: #212734;
-  border-width: 0px;
+  border-width: 1px;
+  border-radius: 5%;
 `;
 
 const ConvertButton = styled(Button)`
   background: #02bf76;
   border-color: #02bf76;
 `;
+
+const language = (localStorage.getItem('language')? localStorage.getItem('language'): 'es');
 
 export default function ConvertForm() {
   const { connected, wallet } = useWallet();
@@ -84,7 +87,7 @@ export default function ConvertForm() {
         `Could not find market info for market names ${fromToken}/${toToken} or ${toToken}/${fromToken}`,
       );
       notify({
-        message: 'Invalid market',
+        message: language === 'en' ? 'Invalid market' : 'Mercado inválido',
         type: 'error',
       });
       return;
@@ -109,7 +112,7 @@ export default function ConvertForm() {
             <Col>
               <Select
                 style={{ minWidth: 300 }}
-                placeholder="Select a token"
+                placeholder={language === 'en' ? 'Select a token' : 'Seleccione una moneda'}
                 value={fromToken}
                 onChange={(token) => {
                   setFromToken(token);
@@ -206,7 +209,7 @@ function ConvertFormSubmit({
     if (!market) {
       console.warn('Market is null when attempting convert.');
       notify({
-        message: 'Invalid market',
+        message: language === 'en' ? 'Invalid market' : 'Mercado inválido',
         type: 'error',
       });
       return;
@@ -228,7 +231,7 @@ function ConvertFormSubmit({
     } catch (e) {
       console.warn(e);
       notify({
-        message: 'Error placing order',
+        message: language === 'en' ? 'Error placing order' : 'Error creando la orden',
         description: e.message,
         type: 'error',
       });
@@ -242,7 +245,7 @@ function ConvertFormSubmit({
       sidedOrderbookAccount,
     );
     if (!orderbookData?.data) {
-      notify({ message: 'Invalid orderbook data', type: 'error' });
+      notify({ message: language === 'en' ? 'Invalid orderbook data' : 'Datos inválidos', type: 'error' });
       return;
     }
     const decodedOrderbookData = Orderbook.decode(market, orderbookData.data);
@@ -250,11 +253,11 @@ function ConvertFormSubmit({
       decodedOrderbookData &&
       decodedOrderbookData.getL2(1).map(([price]) => price);
     if (!bbo) {
-      notify({ message: 'No best price found', type: 'error' });
+      notify({ message: language === 'en' ? 'No best price found' : 'No se ha encontrado el mejor precio', type: 'error' });
       return;
     }
     if (!size) {
-      notify({ message: 'Size not specified', type: 'error' });
+      notify({ message: language === 'en' ? 'Size not specified' : 'No se ha especificado el tamaño de la operación', type: 'error' });
       return;
     }
 
@@ -291,7 +294,7 @@ function ConvertFormSubmit({
     } catch (e) {
       console.warn(e);
       notify({
-        message: 'Error placing order',
+        message: language === 'en' ? 'Error placing order' : 'Error creando la orden',
         description: e.message,
         type: 'error',
       });
@@ -361,7 +364,7 @@ function ConvertFormSubmit({
           <Input
             style={{ minWidth: 300 }}
             addonBefore={`Size (${fromToken})`}
-            placeholder="Size"
+            placeholder={language === 'en' ? 'Size' : 'Tamaño'}
             value={size === null ? undefined : size}
             type="number"
             onChange={(e) => setSize(parseFloat(e.target.value) || undefined)}
@@ -387,7 +390,7 @@ function ConvertFormSubmit({
             onClick={onConvert}
             disabled={!canConvert}
           >
-            Convert
+            {language === 'en' ? 'Convert' : 'Convertir'}
           </ConvertButton>
         </Col>
       </Row>

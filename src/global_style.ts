@@ -49,7 +49,7 @@ input[type=number]:focus::-webkit-inner-spin-button {
   border-bottom: 8px solid #1A2029;
 }
 .ant-table-container table > thead > tr:first-child th {
-  border-bottom: none;
+  border-bottom: 1px solid #00AACC;
 }
 .ant-divider-horizontal.ant-divider-with-text::before, .ant-divider-horizontal.ant-divider-with-text::after {
   border-top: 1px solid #434a59 !important;

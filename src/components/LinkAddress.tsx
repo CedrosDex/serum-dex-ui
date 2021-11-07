@@ -13,7 +13,7 @@ export default function LinkAddress({
 }) {
   return (
     <div>
-      {title && <p style={{ color: 'white' }}>{title}</p>}
+      {title && <p style={{ color: 'F5F5F5' }}>{title}</p>}
       <Button
         type="link"
         icon={<LinkOutlined />}

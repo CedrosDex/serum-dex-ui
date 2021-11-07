@@ -4,6 +4,8 @@ import {
   widget,
   ChartingLibraryWidgetOptions,
   IChartingLibraryWidget,
+  ChartStyle,
+  LanguageCode,
 } from '../../charting_library';
 import { useMarket, USE_MARKETS } from '../../utils/markets';
 import * as saveLoadAdapter from './saveLoadAdapter';
@@ -28,6 +30,7 @@ export interface ChartContainerProps {
   studiesOverrides: ChartingLibraryWidgetOptions['studies_overrides'];
   containerId: ChartingLibraryWidgetOptions['container_id'];
   theme: string;
+  chartType: ChartStyle
 }
 
 export interface ChartContainerState {}
@@ -59,6 +62,8 @@ export const TVChartContainer = () => {
     localStorage.getItem('chartproperties') || '{}',
   );
 
+  const language = (localStorage.getItem('language')? localStorage.getItem('language'): 'es') as LanguageCode
+
   React.useEffect(() => {
     const savedProperties = flatten(chartProperties, {
       restrictTo: ['scalesProperties', 'paneProperties', 'tradingProperties'],
@@ -68,7 +73,7 @@ export const TVChartContainer = () => {
       symbol:
         USE_MARKETS.find(
           (m) => m.address.toBase58() === market?.publicKey.toBase58(),
-        )?.name || 'SRM/USDC',
+        )?.name || 'SOL/USDC',
       // BEWARE: no trailing slash is expected in feed URL
       // tslint:disable-next-line:no-any
       // @ts-ignore
@@ -82,7 +87,7 @@ export const TVChartContainer = () => {
       library_path: defaultProps.libraryPath as string,
       auto_save_delay: 5,
 
-      locale: 'en',
+      locale: language,
       disabled_features: ['use_localstorage_for_settings'],
       enabled_features: ['study_templates'],
       load_last_chart: true,
@@ -100,6 +105,7 @@ export const TVChartContainer = () => {
         'mainSeriesProperties.candleStyle.borderDownColor': '#F23B69',
         'mainSeriesProperties.candleStyle.wickUpColor': '#41C77A',
         'mainSeriesProperties.candleStyle.wickDownColor': '#F23B69',
+        'mainSeriesProperties.style': 2,
       },
       // @ts-ignore
       save_load_adapter: saveLoadAdapter,

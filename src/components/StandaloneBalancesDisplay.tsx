@@ -24,6 +24,123 @@ import { useInterval } from '../utils/useInterval';
 import { useLocalStorageState } from '../utils/utils';
 import { AUTO_SETTLE_DISABLED_OVERRIDE } from '../utils/preferences';
 import { useReferrer } from '../utils/referrer';
+import Oneinch from '../assets/logos/1inch.png';
+import Aave from '../assets/logos/Aave.png';
+import Abr from '../assets/logos/Abr.png';
+import Akro from '../assets/logos/Akro.png';
+import Aleph from '../assets/logos/Aleph.png';
+import Alm from '../assets/logos/Alm.png';
+import Atlas from '../assets/logos/Atlas.png';
+import Aury from '../assets/logos/Aury.png';
+import Bmbo from '../assets/logos/Bmbo.png';
+import Blt from '../assets/logos/Blt.png';
+import Bop from '../assets/logos/Bop.png';
+import Btc from '../assets/logos/Btc.png';
+import Cato from '../assets/logos/Cato.png';
+import Cel from '../assets/logos/Cel.png';
+import Cheems from '../assets/logos/Cheems.png';
+import Comp from '../assets/logos/Comp.png';
+import Cope from '../assets/logos/Cope.png';
+import Cream from '../assets/logos/Cream.png';
+import Crp from '../assets/logos/Crp.png';
+import Cys from '../assets/logos/Cys.png';
+import Dateicon from '../assets/logos/Date.png';
+import Dxl from '../assets/logos/Dxl.png';
+import Eth from '../assets/logos/Eth.png';
+import Fida from '../assets/logos/Fida.png';
+import Floof from '../assets/logos/Floof.png';
+import Fries from '../assets/logos/Fries.png';
+import Front from '../assets/logos/Front.png';
+import Ftr from '../assets/logos/Ftr.png';
+import Ftt from '../assets/logos/Ftt.png';
+import Grape from '../assets/logos/Grape.png';
+import Grt from '../assets/logos/Grt.png';
+import Hget from '../assets/logos/Hget.png';
+import Hnt from '../assets/logos/Hnt.png';
+import Holy from '../assets/logos/Holy.png';
+import Hxro from '../assets/logos/Hxro.png';
+import Isola from '../assets/logos/Isola.png';
+import Ivn from '../assets/logos/Ivn.png';
+import Jet from '../assets/logos/Jet.png';
+import Keep from '../assets/logos/Keep.png';
+import Kin from '../assets/logos/Kin.png';
+import Kuro from '../assets/logos/Kuro.png';
+import Larix from '../assets/logos/Larix.png';
+import Ldo from '../assets/logos/Ldo.png';
+import Lien from '../assets/logos/Lien.png';
+import Like from '../assets/logos/Like.png';
+import Linkicon from '../assets/logos/Link.png';
+import Liq from '../assets/logos/Liq.png';
+import Lqid from '../assets/logos/Lqid.png';
+import Lua from '../assets/logos/Lua.png';
+import Maps from '../assets/logos/Maps.png';
+import Mapspool from '../assets/logos/Mapspool.png';
+import Math from '../assets/logos/Math.png';
+import Media from '../assets/logos/Media.png';
+import Mer from '../assets/logos/Mer.png';
+import Merpool from '../assets/logos/Merpool.png';
+import Mnde from '../assets/logos/Mnde.png';
+import Mngo from '../assets/logos/Mngo.png';
+import Mola from '../assets/logos/Mola.png';
+import Msol from '../assets/logos/Msol.png';
+import Oogi from '../assets/logos/Oogi.png';
+import Orca from '../assets/logos/Orca.png';
+import Oxs from '../assets/logos/Oxs.png';
+import Oxy from '../assets/logos/Oxy.png';
+import Oxypool from '../assets/logos/Oxypool.png';
+import Paxg from '../assets/logos/Paxg.png';
+import Perp from '../assets/logos/Perp.png';
+import Polis from '../assets/logos/Polis.png';
+import Port from '../assets/logos/Port.png';
+import Prt from '../assets/logos/Prt.png';
+import Ray from '../assets/logos/Ray.png';
+import Raypool from '../assets/logos/Raypool.png';
+import Renbch from '../assets/logos/Renbch.png';
+import Renbtc from '../assets/logos/Renbtc.png';
+import Rendoge from '../assets/logos/Rendoge.png';
+import Renfil from '../assets/logos/Renfil.png';
+import Renluna from '../assets/logos/Renluna.png';
+import Renzec from '../assets/logos/Renzec.png';
+import Rin from '../assets/logos/Rin.png';
+import Rope from '../assets/logos/Rope.png';
+import Rsr from '../assets/logos/Rsr.png';
+import Sail from '../assets/logos/Sail.png';
+import Samo from '../assets/logos/Samo.png';
+import Sbr from '../assets/logos/Sbr.png';
+import Seco from '../assets/logos/Seco.png';
+import Shib from '../assets/logos/Shib.png';
+import Slim from '../assets/logos/Slim.png';
+import Slnd from '../assets/logos/Slnd.png';
+import Slrs from '../assets/logos/Slrs.png';
+import Slx from '../assets/logos/Slx.png';
+import Sny from '../assets/logos/Sny.png';
+import Snypool from '../assets/logos/Snypool.png';
+import Sol from '../assets/logos/Sol.png';
+import Solc from '../assets/logos/Solc.png';
+import Solape from '../assets/logos/Solape.png';
+import Soldoge from '../assets/logos/Soldoge.png';
+import Solpad from '../assets/logos/Solpad.png';
+import Srm from '../assets/logos/Srm.png';
+import Step from '../assets/logos/Step.png';
+import Str from '../assets/logos/Str.png';
+import Stsol from '../assets/logos/Stsol.png';
+import Sunny from '../assets/logos/Sunny.png';
+import Sushi from '../assets/logos/Sushi.png';
+import Swoledoge from '../assets/logos/Swoledoge.png';
+import Sxp from '../assets/logos/Sxp.png';
+import Syp from '../assets/logos/Syp.png';
+import Tomo from '../assets/logos/Tomo.png';
+import Tox from '../assets/logos/Trollbox.png';
+import Tulip from '../assets/logos/Tulip.png';
+import Ubxt from '../assets/logos/Ubxt.png';
+import Uni from '../assets/logos/Uni.png';
+import Usdc from '../assets/logos/Usdc.png';
+import Usdt from '../assets/logos/Usdt.png';
+import Wag from '../assets/logos/Wag.png';
+import Woo from '../assets/logos/Woo.png';
+import Woof from '../assets/logos/Woof.png';
+import Yfi from '../assets/logos/Yfi.png';
+
 
 const RowBox = styled(Row)`
   padding-bottom: 20px;
@@ -37,7 +154,8 @@ const Tip = styled.p`
 const ActionButton = styled(Button)`
   color: #2abdd2;
   background-color: #212734;
-  border-width: 0px;
+  border-width: 1px;
+  border-radius: 5%;
 `;
 
 export default function StandaloneBalancesDisplay() {
@@ -57,11 +175,12 @@ export default function StandaloneBalancesDisplay() {
   const [autoSettleEnabled] = useLocalStorageState('autoSettleEnabled', true);
   const [lastSettledAt, setLastSettledAt] = useState<number>(0);
   const { usdcRef, usdtRef } = useReferrer();
+  const language = (localStorage.getItem('language')? localStorage.getItem('language'): 'es')
   async function onSettleFunds() {
     if (!wallet) {
       notify({
-        message: 'Wallet not connected',
-        description: 'wallet is undefined',
+        message: language === 'en' ? 'Wallet not connected': 'Billetera sin conectar',
+        description: language === 'en' ? 'wallet is undefined' : 'billetera indefinida',
         type: 'error',
       });
       return;
@@ -69,32 +188,32 @@ export default function StandaloneBalancesDisplay() {
 
     if (!market) {
       notify({
-        message: 'Error settling funds',
-        description: 'market is undefined',
+        message: language === 'en' ? 'Error settling funds': 'Error al liquidar fondos',
+        description: language === 'en' ? 'market is undefined' : 'mercado indefinido',
         type: 'error',
       });
       return;
     }
     if (!openOrdersAccount) {
       notify({
-        message: 'Error settling funds',
-        description: 'Open orders account is undefined',
+        message: language === 'en' ? 'Error settling funds': 'Error al liquidar fondos',
+        description: language === 'en' ? 'Open orders account is undefined': 'La cuenta de pedidos abiertos no está definida',
         type: 'error',
       });
       return;
     }
     if (!baseCurrencyAccount) {
       notify({
-        message: 'Error settling funds',
-        description: 'Open orders account is undefined',
+        message: language === 'en' ? 'Error settling funds': 'Error al liquidar fondos',
+        description: language === 'en' ? 'Open orders account is undefined': 'La cuenta de pedidos abiertos no está definida',
         type: 'error',
       });
       return;
     }
     if (!quoteCurrencyAccount) {
       notify({
-        message: 'Error settling funds',
-        description: 'Open orders account is undefined',
+        message: language === 'en' ? 'Error settling funds': 'Error al liquidar fondos',
+        description: language === 'en' ? 'Open orders account is undefined': 'La cuenta de pedidos abiertos no está definida',
         type: 'error',
       });
       return;
@@ -113,7 +232,7 @@ export default function StandaloneBalancesDisplay() {
       });
     } catch (e) {
       notify({
-        message: 'Error settling funds',
+        message: language === 'en' ? 'Error settling funds': 'Error al liquidar fondos',
         description: e.message,
         type: 'error',
       });
@@ -184,13 +303,131 @@ export default function StandaloneBalancesDisplay() {
     ],
   ];
 
+  const Logos = {
+    '1INCH' : Oneinch,
+    'AAVE' : Aave,
+    'ABR' : Abr,
+    'AKRO' : Akro,
+    'ALEPH' : Aleph,
+    'ALM' : Alm,
+    'ATLAS' : Atlas,
+    'AURY' : Aury,
+    'BLT' : Blt,
+    'BOP' : Bop,
+    'BMBO' : Bmbo,
+    'BTC' : Btc,
+    'CATO' : Cato,
+    'CEL' : Cel,
+    'CHEEMS' : Cheems,
+    'COMP' : Comp,
+    'COPE' : Cope,
+    'CREAM' : Cream,
+    'CRP' : Crp,
+    'CYS' : Cys,
+    'DATE' : Dateicon,
+    'DXL' : Dxl,
+    'ETH' : Eth,
+    'FIDA' : Fida,
+    'FLOOF' : Floof,
+    'FRIES' : Fries,
+    'FRONT' : Front,
+    'FTR' : Ftr,
+    'FTT' : Ftt,
+    'GRAPE' : Grape,
+    'GRT' : Grt,
+    'HGET' : Hget,
+    'HNT' : Hnt,
+    'HOLY' : Holy,
+    'HXRO' : Hxro,
+    'ISOLA' : Isola,
+    'IVN' : Ivn,
+    'JET' : Jet,
+    'KEEP' : Keep,
+    'KIN' : Kin,
+    'KURO' : Kuro,
+    'LARIX' : Larix,
+    'LDO' : Ldo,
+    'LIEN' : Lien,
+    'LIKE' : Like,
+    'LINK' : Linkicon,
+    'LIQ' : Liq,
+    'LQID' : Lqid,
+    'LUA' : Lua,
+    'MAPS' : Maps,
+    'MAPSPOOL' : Mapspool,
+    'MATH' : Math,
+    'MEDIA' : Media,
+    'MER' : Mer,
+    'MERPOOL' : Merpool,
+    'MNDE' : Mnde,
+    'MNGO' : Mngo,
+    'MOLA' : Mola,
+    'mSOL' : Msol,
+    'OOGI' : Oogi,
+    'ORCA' : Orca,
+    'OXS' : Oxs,
+    'OXY' : Oxy,
+    'OXYPOOL' : Oxypool,
+    'PAXG' : Paxg,
+    'PERP' : Perp,
+    'POLIS' : Polis,
+    'PORT' : Port,
+    'PRT' : Prt,
+    'RAY' : Ray,
+    'RAYPOOL' : Raypool,
+    'RIN' : Rin,
+    'ROPE' : Rope,
+    'RSR' : Rsr,
+    'SAIL' : Sail,
+    'SAMO' : Samo,
+    'SBR' : Sbr,
+    'SECO' : Seco,
+    'SLIM' : Slim,
+    'SLND' : Slnd,
+    'SLRS' : Slrs,
+    'SLX' : Slx,
+    'SNY' : Sny,
+    'SNYPOOL' : Snypool,
+    'SOL' : Sol,
+    'SOLC' : Solc,
+    'SOLAPE' : Solape,
+    'SOLDOGE' : Soldoge,
+    'SOLPAD' : Solpad,
+    'SRM' : Srm,
+    'STEP' : Step,
+    'STR' : Str,
+    'stSOL' : Stsol,
+    'SUNNY' : Sunny,
+    'SUSHI' : Sushi,
+    'SWOLEDOGE' : Swoledoge,
+    'SXP' : Sxp,
+    'SYP' : Syp,
+    'TOMO' : Tomo,
+    'TOX' : Tox,
+    'TULIP' : Tulip,
+    'UBXT' : Ubxt,
+    'UNI' : Uni,
+    'USDT' : Usdt,
+    'USDC' : Usdc,
+    'WAG' : Wag,
+    'WOO' : Woo,
+    'WOOF' : Woof,
+    'YFI' : Yfi,
+    'renBCH' : Renbch,
+    'renBTC' : Renbtc,
+    'renDOGE' : Rendoge,
+    'renFIL' : Renfil,
+    'renLUNA' : Renluna,
+    'renZEC' : Renzec,
+  }
+
   return (
     <FloatingElement style={{ flex: 1, paddingTop: 10 }}>
       {formattedBalances.map(
         ([currency, balances, baseOrQuote, mint], index) => (
           <React.Fragment key={index}>
             <Divider style={{ borderColor: 'white' }}>
-              {currency}{' '}
+            {currency}{' '} <img src={Logos[currency?.toString() || ""]} width="50px"/>
               {mint && (
                 <Popover
                   content={<LinkAddress address={mint} />}
@@ -198,7 +435,7 @@ export default function StandaloneBalancesDisplay() {
                   title="Token mint"
                   trigger="hover"
                 >
-                  <InfoCircleOutlined style={{ color: '#2abdd2' }} />
+                  <InfoCircleOutlined style={{ color: '#2abdd2', paddingLeft:8 }} />
                 </Popover>
               )}
             </Divider>
@@ -218,7 +455,7 @@ export default function StandaloneBalancesDisplay() {
               justify="space-between"
               style={{ paddingBottom: 12 }}
             >
-              <Col>Wallet balance:</Col>
+              <Col>{(language === 'en')?"Wallet balance:" : "Saldo:"}</Col>
               <Col>{balances && balances.wallet}</Col>
             </RowBox>
             <RowBox
@@ -226,7 +463,7 @@ export default function StandaloneBalancesDisplay() {
               justify="space-between"
               style={{ paddingBottom: 12 }}
             >
-              <Col>Unsettled balance:</Col>
+              <Col>{(language === 'en')?"Unsettled balance:" : "Saldo sin liquidar:"}</Col>
               <Col>{balances && balances.unsettled}</Col>
             </RowBox>
             <RowBox align="middle" justify="space-around">
@@ -236,21 +473,21 @@ export default function StandaloneBalancesDisplay() {
                   size="large"
                   onClick={() => setBaseOrQuote(baseOrQuote)}
                 >
-                  Deposit
+                  {(language === 'en')?"Deposit" : "Depositar"}
                 </ActionButton>
               </Col>
               <Col style={{ width: 150 }}>
                 <ActionButton block size="large" onClick={onSettleFunds}>
-                  Settle
+                {(language === 'en')?"Settle" : "Liquidar"}
                 </ActionButton>
               </Col>
             </RowBox>
             <Tip>
-              All deposits go to your{' '}
+            {(language === 'en')?"All deposits go to your " : "Todos los depósitos irán a su "}
               <Link external to={providerUrl}>
                 {providerName}
               </Link>{' '}
-              wallet
+              {(language === 'en')?"wallet" : "billetera"}
             </Tip>
           </React.Fragment>
         ),

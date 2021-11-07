@@ -24,33 +24,43 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 0px 30px;
+  padding: 0px 40px;
   flex-wrap: wrap;
 `;
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  color: #2abdd2;
+  color: #1B98E0;
   font-weight: bold;
   cursor: pointer;
   img {
-    height: 30px;
+    height: 100px;
     margin-right: 8px;
   }
 `;
 
 const EXTERNAL_LINKS = {
-  '/learn': 'https://docs.projectserum.com/trade-on-serum-dex/trade-on-serum-dex-1',
   '/add-market': 'https://serum-academy.com/en/add-market/',
   '/wallet-support': 'https://serum-academy.com/en/wallet-support',
-  '/dex-list': 'https://serum-academy.com/en/dex-list/',
-  '/developer-resources': 'https://serum-academy.com/en/developer-resources/',
-  '/explorer': 'https://solscan.io',
-  '/srm-faq': 'https://projectserum.com/srm-faq',
-  '/swap': 'https://swap.projectserum.com',
+  '/explorer': 'https://explorer.solana.com',
+  '/srm-faq': 'https://docs.cedros.io',
+  '/cedros.io': 'https://cedros.io',
+  '/perps': 'https://perps.cedros.io',
+  '/options': 'https://options.cedros.io',
+  '/nfts': 'https://nfts.cedros.io',
+  '/learn': 'https://docs.cedros.io',
+
+
 };
 
 export default function TopBar() {
+  const language = (localStorage.getItem('language')? localStorage.getItem('language'): 'es');
+
+  const changeLanguage = (lang) => {
+    localStorage.setItem('language',lang)
+    window.location.reload()
+  }
+
   const { connected, wallet } = useWallet();
   const {
     endpoint,
@@ -142,7 +152,7 @@ export default function TopBar() {
       <Wrapper>
         <LogoWrapper onClick={() => history.push(tradePageUrl)}>
           <img src={logo} alt="" />
-          {'SERUM'}
+          {'CEDROS'}
         </LogoWrapper>
         <Menu
           mode="horizontal"
@@ -156,82 +166,34 @@ export default function TopBar() {
             flex: 1,
           }}
         >
-          <Menu.Item key={tradePageUrl} style={{ margin: '0 10px 0 20px' }}>
-            TRADE
+                    <Menu.Item key={tradePageUrl} style={{ margin: '0 10px 0 20px' }}>
+            {language === 'en' ? 'TRADE' : 'OPERAR'}
           </Menu.Item>
-          {!searchFocussed && (
-            <Menu.Item key="/swap" style={{ margin: '0 10px' }}>
-              <a
-                href={EXTERNAL_LINKS['/swap']}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                SWAP
-              </a>
-            </Menu.Item>
-          )}
           {connected && (!searchFocussed || location.pathname === '/balances') && (
             <Menu.Item key="/balances" style={{ margin: '0 10px' }}>
-              BALANCES
+              {language === 'en' ? 'BALANCES' : 'SALDOS'}
             </Menu.Item>
           )}
           {connected && (!searchFocussed || location.pathname === '/orders') && (
             <Menu.Item key="/orders" style={{ margin: '0 10px' }}>
-              ORDERS
-            </Menu.Item>
-          )}
-          {connected && (!searchFocussed || location.pathname === '/convert') && (
-            <Menu.Item key="/convert" style={{ margin: '0 10px' }}>
-              CONVERT
-            </Menu.Item>
-          )}
-          {(!searchFocussed || location.pathname === '/list-new-market') && (
-            <Menu.Item key="/list-new-market" style={{ margin: '0 10px' }}>
-              ADD MARKET
+              {language === 'en' ? 'ORDERS' : 'ÓRDENES'}
             </Menu.Item>
           )}
           {!searchFocussed && (
             <Menu.SubMenu
-              title="LEARN"
-              onTitleClick={() =>
+            title={language === 'en' ? 'LEARN' : 'APRENDIZAJE'}
+            onTitleClick={() =>
                 window.open(EXTERNAL_LINKS['/learn'], '_blank')
               }
               style={{ margin: '0 0px 0 10px' }}
             >
-              <Menu.Item key="/add-market">
-                <a
-                  href={EXTERNAL_LINKS['/add-market']}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Adding a market
-                </a>
-              </Menu.Item>
               <Menu.Item key="/wallet-support">
                 <a
                   href={EXTERNAL_LINKS['/wallet-support']}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Supported wallets
-                </a>
-              </Menu.Item>
-              <Menu.Item key="/dex-list">
-                <a
-                  href={EXTERNAL_LINKS['/dex-list']}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  DEX list
-                </a>
-              </Menu.Item>
-              <Menu.Item key="/developer-resources">
-                <a
-                  href={EXTERNAL_LINKS['/developer-resources']}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Developer resources
+                  {language === 'en' ? 'Supported wallets' : 'Billeteras soportadas'}
                 </a>
               </Menu.Item>
               <Menu.Item key="/explorer">
@@ -240,7 +202,7 @@ export default function TopBar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Solana block explorer
+                  {language === 'en' ? 'Solana block explorer' : 'Explorador de Solana'}
                 </a>
               </Menu.Item>
               <Menu.Item key="/srm-faq">
@@ -249,7 +211,7 @@ export default function TopBar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  SRM FAQ
+                  {language === 'en' ? 'SRM FAQ' : 'Preguntas frecuentes'}
                 </a>
               </Menu.Item>
             </Menu.SubMenu>
@@ -302,6 +264,17 @@ export default function TopBar() {
                     {name}
                   </Select.Option>
                 ))}
+              </Select>
+            </Col>
+            <Col>
+              <Select
+                onChange={changeLanguage}
+                style={{ marginRight: 8, width: '150px' }}
+                placeholder={language === 'en' ? 'Select language' : 'Seleccione el idioma de la interfaz'}
+                defaultValue={language?.toString()}
+              >
+                <Select.Option value="es">Español</Select.Option>
+                <Select.Option value="en">English</Select.Option>
               </Select>
             </Col>
           </Row>

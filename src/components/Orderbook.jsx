@@ -14,7 +14,7 @@ const Title = styled.div`
 
 const SizeTitle = styled(Row)`
   padding: 20px 0 14px;
-  color: #434a59;
+  color: #1B98E0;
 `;
 
 const MarkPriceTitle = styled(Row)`
@@ -54,7 +54,11 @@ export default function Orderbook({ smallScreen, depth = 7, onPrice, onSize }) {
 
   const [orderbookData, setOrderbookData] = useState(null);
 
-  useInterval(() => {
+  const language = localStorage.getItem('language')
+    ? localStorage.getItem('language')
+    : 'es';
+
+    useInterval(() => {
     if (
       !currentOrderbookData.current ||
       JSON.stringify(currentOrderbookData.current) !==
@@ -110,14 +114,14 @@ export default function Orderbook({ smallScreen, depth = 7, onPrice, onSize }) {
       style={
         smallScreen ? { flex: 1 } : { height: '500px', overflow: 'hidden' }
       }
-    >
-      <Title>Orderbook</Title>
+      >
+      <Title>{language === 'en' ? 'Orderbook' : 'Registro de órdenes'}</Title>
       <SizeTitle>
         <Col span={12} style={{ textAlign: 'left' }}>
-          Size ({baseCurrency})
+          {language === 'en' ? 'Size' : 'Tamaño'} ({baseCurrency})
         </Col>
         <Col span={12} style={{ textAlign: 'right' }}>
-          Price ({quoteCurrency})
+          {language === 'en' ? 'Price' : 'Precio'} ({quoteCurrency})
         </Col>
       </SizeTitle>
       {orderbookData?.asks.map(({ price, size, sizePercent }) => (
@@ -185,9 +189,7 @@ const OrderbookRow = React.memo(
           <Line
             data-width={sizePercent + '%'}
             data-bgcolor={
-              side === 'buy'
-                ? 'rgba(65, 199, 122, 0.6)'
-                : 'rgba(242, 60, 105, 0.6)'
+              side === 'buy' ? 'rgba(0,186,19,1)' : 'rgba(184,0,9,1)'
             }
           />
           <Price onClick={onPriceClick}>{formattedPrice}</Price>
@@ -206,10 +208,10 @@ const MarkPriceComponent = React.memo(
 
     let markPriceColor =
       markPrice > previousMarkPrice
-        ? '#41C77A'
+        ? '#00BA13'
         : markPrice < previousMarkPrice
-        ? '#F23B69'
-        : 'white';
+        ? '#F5000C'
+        : '#FDE907';
 
     let formattedMarkPrice =
       markPrice &&
