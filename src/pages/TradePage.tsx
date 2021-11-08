@@ -33,6 +33,7 @@ import Fries from '../assets/logos/Fries.png';
 import Front from '../assets/logos/Front.png';
 import Ftr from '../assets/logos/Ftr.png';
 import Ftt from '../assets/logos/Ftt.png';
+import Gofx from '../assets/logos/Gofx.png';
 import Grape from '../assets/logos/Grape.png';
 import Grt from '../assets/logos/Grt.png';
 import Hget from '../assets/logos/Hget.png';
@@ -372,6 +373,7 @@ function MarketSelector({
     'FRONT/USDC' : Front,
     'FTR/USDC' : Ftr,
     'FTT/USDC' : Ftt,
+    'GOFX/USDC' : Gofx,
     'GRAPE/USDC' : Grape,
     'GRT/USDC' : Grt,
     'HGET/USDC' : Hget,

@@ -53,6 +53,7 @@ import Fries from '../assets/logos/Fries.png';
 import Front from '../assets/logos/Front.png';
 import Ftr from '../assets/logos/Ftr.png';
 import Ftt from '../assets/logos/Ftt.png';
+import Gofx from '../assets/logos/Gofx.png';
 import Grape from '../assets/logos/Grape.png';
 import Grt from '../assets/logos/Grt.png';
 import Hget from '../assets/logos/Hget.png';
@@ -333,6 +334,7 @@ export default function StandaloneBalancesDisplay() {
     'FRONT' : Front,
     'FTR' : Ftr,
     'FTT' : Ftt,
+    'GOFX' : Gofx,
     'GRAPE' : Grape,
     'GRT' : Grt,
     'HGET' : Hget,
