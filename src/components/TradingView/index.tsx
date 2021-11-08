@@ -31,6 +31,7 @@ export interface ChartContainerProps {
   containerId: ChartingLibraryWidgetOptions['container_id'];
   theme: string;
   chartType: ChartStyle
+  disabled_features: string;
 }
 
 export interface ChartContainerState {}
@@ -52,7 +53,7 @@ export const TVChartContainer = () => {
     fullscreen: false,
     autosize: true,
     datafeedUrl: BONFIDA_DATA_FEED,
-    studiesOverrides: {},
+    studiesOverrides: {}
   };
 
   const tvWidgetRef = React.useRef<IChartingLibraryWidget | null>(null);
@@ -105,7 +106,7 @@ export const TVChartContainer = () => {
         'mainSeriesProperties.candleStyle.borderDownColor': '#F23B69',
         'mainSeriesProperties.candleStyle.wickUpColor': '#41C77A',
         'mainSeriesProperties.candleStyle.wickDownColor': '#F23B69',
-        'mainSeriesProperties.style': 2,
+        'mainSeriesProperties.style': 3,
       },
       // @ts-ignore
       save_load_adapter: saveLoadAdapter,

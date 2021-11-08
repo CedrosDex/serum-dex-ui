@@ -32,6 +32,7 @@ const LogoWrapper = styled.div`
   align-items: center;
   color: #1B98E0;
   font-weight: bold;
+  font-size: 30px;
   cursor: pointer;
   img {
     height: 100px;
@@ -174,11 +175,6 @@ export default function TopBar() {
               {language === 'en' ? 'BALANCES' : 'SALDOS'}
             </Menu.Item>
           )}
-          {connected && (!searchFocussed || location.pathname === '/orders') && (
-            <Menu.Item key="/orders" style={{ margin: '0 10px' }}>
-              {language === 'en' ? 'ORDERS' : 'ÓRDENES'}
-            </Menu.Item>
-          )}
           {!searchFocussed && (
             <Menu.SubMenu
             title={language === 'en' ? 'LEARN' : 'APRENDIZAJE'}
@@ -187,15 +183,6 @@ export default function TopBar() {
               }
               style={{ margin: '0 0px 0 10px' }}
             >
-              <Menu.Item key="/wallet-support">
-                <a
-                  href={EXTERNAL_LINKS['/wallet-support']}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {language === 'en' ? 'Supported wallets' : 'Billeteras soportadas'}
-                </a>
-              </Menu.Item>
               <Menu.Item key="/explorer">
                 <a
                   href={EXTERNAL_LINKS['/explorer']}
@@ -279,21 +266,6 @@ export default function TopBar() {
             </Col>
           </Row>
         </div>
-        {connected && (
-          <div>
-            <Popover
-              content={<Settings autoApprove={wallet?.autoApprove} />}
-              placement="bottomRight"
-              title="Settings"
-              trigger="click"
-            >
-              <Button style={{ marginRight: 8 }}>
-                <SettingOutlined />
-                Settings
-              </Button>
-            </Popover>
-          </div>
-        )}
         <div>
           <WalletConnect />
         </div>

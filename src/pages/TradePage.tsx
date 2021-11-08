@@ -202,7 +202,7 @@ function TradePageInner() {
 
   
   useEffect(() => {
-    document.title = marketName ? `${marketName} — Serum` : 'Serum';
+    document.title = marketName ? `${marketName} — Cedros` : 'Cedros';
   }, [marketName]);
 
   const changeOrderRef = useRef<
@@ -280,7 +280,7 @@ function TradePageInner() {
       <Wrapper>
         <Row
           align="middle"
-          style={{ paddingLeft: 5, paddingRight: 5 }}
+          style={{ paddingLeft: 5, paddingRight: 5}}
           gutter={16}
         >
           <Col>
