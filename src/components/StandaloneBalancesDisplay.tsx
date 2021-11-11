@@ -32,6 +32,7 @@ import Aleph from '../assets/logos/Aleph.png';
 import Alm from '../assets/logos/Alm.png';
 import Atlas from '../assets/logos/Atlas.png';
 import Aury from '../assets/logos/Aury.png';
+import Axs from '../assets/logos/Axs.png';
 import Bmbo from '../assets/logos/Bmbo.png';
 import Blt from '../assets/logos/Blt.png';
 import Bop from '../assets/logos/Bop.png';
@@ -46,6 +47,7 @@ import Crp from '../assets/logos/Crp.png';
 import Cys from '../assets/logos/Cys.png';
 import Dateicon from '../assets/logos/Date.png';
 import Dxl from '../assets/logos/Dxl.png';
+import Dydx from '../assets/logos/Dydx.png';
 import Eth from '../assets/logos/Eth.png';
 import Fida from '../assets/logos/Fida.png';
 import Floof from '../assets/logos/Floof.png';
@@ -60,6 +62,7 @@ import Hget from '../assets/logos/Hget.png';
 import Hnt from '../assets/logos/Hnt.png';
 import Holy from '../assets/logos/Holy.png';
 import Hxro from '../assets/logos/Hxro.png';
+import Inicon from '../assets/logos/In.png';
 import Isola from '../assets/logos/Isola.png';
 import Ivn from '../assets/logos/Ivn.png';
 import Jet from '../assets/logos/Jet.png';
@@ -122,6 +125,7 @@ import Solape from '../assets/logos/Solape.png';
 import Soldoge from '../assets/logos/Soldoge.png';
 import Solpad from '../assets/logos/Solpad.png';
 import Srm from '../assets/logos/Srm.png';
+import Stars from '../assets/logos/Stars.png';
 import Step from '../assets/logos/Step.png';
 import Str from '../assets/logos/Str.png';
 import Stsol from '../assets/logos/Stsol.png';
@@ -135,6 +139,7 @@ import Tox from '../assets/logos/Trollbox.png';
 import Tulip from '../assets/logos/Tulip.png';
 import Ubxt from '../assets/logos/Ubxt.png';
 import Uni from '../assets/logos/Uni.png';
+import Ups from '../assets/logos/Ups.png';
 import Usdc from '../assets/logos/Usdc.png';
 import Usdt from '../assets/logos/Usdt.png';
 import Wag from '../assets/logos/Wag.png';
@@ -313,6 +318,7 @@ export default function StandaloneBalancesDisplay() {
     'ALM' : Alm,
     'ATLAS' : Atlas,
     'AURY' : Aury,
+    'AXS' : Axs, 
     'BLT' : Blt,
     'BOP' : Bop,
     'BMBO' : Bmbo,
@@ -327,6 +333,7 @@ export default function StandaloneBalancesDisplay() {
     'CYS' : Cys,
     'DATE' : Dateicon,
     'DXL' : Dxl,
+    'DYDX' : Dydx,
     'ETH' : Eth,
     'FIDA' : Fida,
     'FLOOF' : Floof,
@@ -341,6 +348,7 @@ export default function StandaloneBalancesDisplay() {
     'HNT' : Hnt,
     'HOLY' : Holy,
     'HXRO' : Hxro,
+    'IN' : Inicon,
     'ISOLA' : Isola,
     'IVN' : Ivn,
     'JET' : Jet,
@@ -384,6 +392,7 @@ export default function StandaloneBalancesDisplay() {
     'SAMO' : Samo,
     'SBR' : Sbr,
     'SECO' : Seco,
+    'SHIB' : Shib, 
     'SLIM' : Slim,
     'SLND' : Slnd,
     'SLRS' : Slrs,
@@ -396,6 +405,7 @@ export default function StandaloneBalancesDisplay() {
     'SOLDOGE' : Soldoge,
     'SOLPAD' : Solpad,
     'SRM' : Srm,
+    'STARS' : Stars,
     'STEP' : Step,
     'STR' : Str,
     'stSOL' : Stsol,
@@ -409,6 +419,7 @@ export default function StandaloneBalancesDisplay() {
     'TULIP' : Tulip,
     'UBXT' : Ubxt,
     'UNI' : Uni,
+    'UPS' : Ups, 
     'USDT' : Usdt,
     'USDC' : Usdc,
     'WAG' : Wag,

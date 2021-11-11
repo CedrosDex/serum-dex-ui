@@ -12,6 +12,7 @@ import Aleph from '../assets/logos/Aleph.png';
 import Alm from '../assets/logos/Alm.png';
 import Atlas from '../assets/logos/Atlas.png';
 import Aury from '../assets/logos/Aury.png';
+import Axs from '../assets/logos/Axs.png';
 import Bmbo from '../assets/logos/Bmbo.png';
 import Blt from '../assets/logos/Blt.png';
 import Bop from '../assets/logos/Bop.png';
@@ -26,6 +27,7 @@ import Crp from '../assets/logos/Crp.png';
 import Cys from '../assets/logos/Cys.png';
 import Dateicon from '../assets/logos/Date.png';
 import Dxl from '../assets/logos/Dxl.png';
+import Dydx from '../assets/logos/Dydx.png';
 import Eth from '../assets/logos/Eth.png';
 import Fida from '../assets/logos/Fida.png';
 import Floof from '../assets/logos/Floof.png';
@@ -40,6 +42,7 @@ import Hget from '../assets/logos/Hget.png';
 import Hnt from '../assets/logos/Hnt.png';
 import Holy from '../assets/logos/Holy.png';
 import Hxro from '../assets/logos/Hxro.png';
+import Inicon from '../assets/logos/In.png';
 import Isola from '../assets/logos/Isola.png';
 import Ivn from '../assets/logos/Ivn.png';
 import Jet from '../assets/logos/Jet.png';
@@ -102,6 +105,7 @@ import Solape from '../assets/logos/Solape.png';
 import Soldoge from '../assets/logos/Soldoge.png';
 import Solpad from '../assets/logos/Solpad.png';
 import Srm from '../assets/logos/Srm.png';
+import Stars from '../assets/logos/Stars.png';
 import Step from '../assets/logos/Step.png';
 import Str from '../assets/logos/Str.png';
 import Stsol from '../assets/logos/Stsol.png';
@@ -115,6 +119,7 @@ import Tox from '../assets/logos/Trollbox.png';
 import Tulip from '../assets/logos/Tulip.png';
 import Ubxt from '../assets/logos/Ubxt.png';
 import Uni from '../assets/logos/Uni.png';
+import Ups from '../assets/logos/Ups.png';
 import Usdt from '../assets/logos/Usdt.png';
 import Wag from '../assets/logos/Wag.png';
 import Woo from '../assets/logos/Woo.png';
@@ -350,6 +355,7 @@ function MarketSelector({
     'ALM/USDC' : Alm,
     'ATLAS/USDC' : Atlas,
     'AURY/USDC' : Aury,
+    'AXS/USDC' : Axs,
     'BLT/USDC' : Blt,
     'BMBO/USDC' : Bmbo,
     'BOP/USDC' : Bop,
@@ -365,6 +371,7 @@ function MarketSelector({
     'CYS/USDC' : Cys,
     'DATE/USDC' : Dateicon,
     'DXL/USDC' : Dxl,
+    'DYDX/USDC' : Dydx,
     'ETH/USDT' : Eth,
     'ETH/USDC' : Eth,
     'FIDA/USDC' : Fida,
@@ -380,6 +387,7 @@ function MarketSelector({
     'HNT/USDC' : Hnt,
     'HOLY/USDC' : Holy,
     'HXRO/USDC' : Hxro,
+    'IN/USDC' : Inicon,
     'ISOLA/USDT' : Isola,
     'IVN/USDC' : Ivn,
     'JET/USDC' : Jet,
@@ -423,6 +431,7 @@ function MarketSelector({
     'SAMO/USDC' : Samo,
     'SBR/USDC' : Sbr,
     'SECO/USDC' : Seco,
+    'SHIB/USDC' : Shib,
     'SLIM/SOL' : Slim,
     'SLND/USDC' : Slnd,
     'SLRS/USDC' : Slrs,
@@ -435,6 +444,7 @@ function MarketSelector({
     'SOLDOGE/USDC' : Soldoge,
     'SOLPAD/USDC' : Solpad,
     'SRM/USDC' : Srm,
+    'STARS/USDC' : Stars,
     'STEP/USDC' : Step,
     'STR/USDC' : Str,
     'stSOL/USDC' : Stsol,
@@ -448,6 +458,7 @@ function MarketSelector({
     'TULIP/USDC' : Tulip,
     'UBXT/USDC' : Ubxt,
     'UNI/USDC' : Uni,
+    'UPS/USDC' : Ups,
     'USDT/USDC' : Usdt,
     'WAG/USDC' : Wag,
     'WOO/USDC' : Woo,
