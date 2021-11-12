@@ -18,7 +18,7 @@ export function Routes() {
         <BasicLayout>
           <Switch>
             <Route exact path="/">
-              <Redirect to={getTradePageUrl()} />
+              <Redirect to="/market/9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT" />
             </Route>
             <Route exact path="/market/:marketAddress">
               <TradePage />
