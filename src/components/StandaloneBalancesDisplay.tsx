@@ -87,6 +87,7 @@ import Mnde from '../assets/logos/Mnde.png';
 import Mngo from '../assets/logos/Mngo.png';
 import Mola from '../assets/logos/Mola.png';
 import Msol from '../assets/logos/Msol.png';
+import Nfd from '../assets/logos/Nfd.png';
 import Oogi from '../assets/logos/Oogi.png';
 import Orca from '../assets/logos/Orca.png';
 import Oxs from '../assets/logos/Oxs.png';
@@ -373,6 +374,7 @@ export default function StandaloneBalancesDisplay() {
     'MNGO' : Mngo,
     'MOLA' : Mola,
     'mSOL' : Msol,
+    'NFD' : Nfd,
     'OOGI' : Oogi,
     'ORCA' : Orca,
     'OXS' : Oxs,

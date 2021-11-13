@@ -67,6 +67,7 @@ import Mnde from '../assets/logos/Mnde.png';
 import Mngo from '../assets/logos/Mngo.png';
 import Mola from '../assets/logos/Mola.png';
 import Msol from '../assets/logos/Msol.png';
+import Nfd from '../assets/logos/Nfd.png';
 import Oogi from '../assets/logos/Oogi.png';
 import Orca from '../assets/logos/Orca.png';
 import Oxs from '../assets/logos/Oxs.png';
@@ -412,6 +413,7 @@ function MarketSelector({
     'MNGO/USDC' : Mngo,
     'MOLA/USDC' : Mola,
     'mSOL/USDC' : Msol,
+    'NFD/USDC' : Nfd,
     'OOGI/USDC' : Oogi,
     'ORCA/USDC' : Orca,
     'OXS/USDC' : Oxs,
