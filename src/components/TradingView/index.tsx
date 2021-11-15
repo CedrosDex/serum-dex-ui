@@ -15,7 +15,6 @@ import { BONFIDA_DATA_FEED } from '../../utils/bonfidaConnector';
 export interface ChartContainerProps {
   symbol: ChartingLibraryWidgetOptions['symbol'];
   interval: ChartingLibraryWidgetOptions['interval'];
-  timeframe: ChartingLibraryWidgetOptions['timeframe'];
   auto_save_delay: ChartingLibraryWidgetOptions['auto_save_delay'];
 
   // BEWARE: no trailing slash is expected in feed URL
@@ -43,7 +42,6 @@ export const TVChartContainer = () => {
     symbol: 'BTC/USDC',
     // @ts-ignore
     interval: '5',
-    timeframe: '5D',
     auto_save_delay: 5,
     theme: 'Dark',
     containerId: 'tv_chart_container',

@@ -26,6 +26,7 @@ yarn-error.log*
 
 .env
 
+.firebase
 
 # TV 
 public/charting_library
