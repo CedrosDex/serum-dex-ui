@@ -38,12 +38,14 @@ import Blt from '../assets/logos/Blt.png';
 import Bop from '../assets/logos/Bop.png';
 import Btc from '../assets/logos/Btc.png';
 import Cato from '../assets/logos/Cato.png';
+import Cave from '../assets/logos/Cave.png';
 import Cel from '../assets/logos/Cel.png';
 import Cheems from '../assets/logos/Cheems.png';
 import Comp from '../assets/logos/Comp.png';
 import Cope from '../assets/logos/Cope.png';
 import Cream from '../assets/logos/Cream.png';
 import Crp from '../assets/logos/Crp.png';
+import Cwar from '../assets/logos/Cwar.png';
 import Cys from '../assets/logos/Cys.png';
 import Dateicon from '../assets/logos/Date.png';
 import Dxl from '../assets/logos/Dxl.png';
@@ -77,6 +79,7 @@ import Linkicon from '../assets/logos/Link.png';
 import Liq from '../assets/logos/Liq.png';
 import Lqid from '../assets/logos/Lqid.png';
 import Lua from '../assets/logos/Lua.png';
+import Mana from '../assets/logos/Mana.png';
 import Maps from '../assets/logos/Maps.png';
 import Mapspool from '../assets/logos/Mapspool.png';
 import Math from '../assets/logos/Math.png';
@@ -111,6 +114,7 @@ import Rope from '../assets/logos/Rope.png';
 import Rsr from '../assets/logos/Rsr.png';
 import Sail from '../assets/logos/Sail.png';
 import Samo from '../assets/logos/Samo.png';
+import Sand from '../assets/logos/Sand.png';
 import Sbr from '../assets/logos/Sbr.png';
 import Seco from '../assets/logos/Seco.png';
 import Shib from '../assets/logos/Shib.png';
@@ -325,12 +329,14 @@ export default function StandaloneBalancesDisplay() {
     'BMBO' : Bmbo,
     'BTC' : Btc,
     'CATO' : Cato,
+    'CAVE' : Cave,
     'CEL' : Cel,
     'CHEEMS' : Cheems,
     'COMP' : Comp,
     'COPE' : Cope,
     'CREAM' : Cream,
     'CRP' : Crp,
+    'CWAR' : Cwar,
     'CYS' : Cys,
     'DATE' : Dateicon,
     'DXL' : Dxl,
@@ -364,6 +370,7 @@ export default function StandaloneBalancesDisplay() {
     'LIQ' : Liq,
     'LQID' : Lqid,
     'LUA' : Lua,
+    'MANA' : Mana,
     'MAPS' : Maps,
     'MAPSPOOL' : Mapspool,
     'MATH' : Math,
@@ -392,6 +399,7 @@ export default function StandaloneBalancesDisplay() {
     'RSR' : Rsr,
     'SAIL' : Sail,
     'SAMO' : Samo,
+    'SAND' : Sand,
     'SBR' : Sbr,
     'SECO' : Seco,
     'SHIB' : Shib, 
