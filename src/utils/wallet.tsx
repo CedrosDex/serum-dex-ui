@@ -244,7 +244,7 @@ export function useWallet() {
     providerName: context.providerName,
     select: context.select,
     connect() {
-      wallet ? wallet.connect() : context.select();
+      context.select();
     },
     disconnect() {
       wallet?.disconnect();
