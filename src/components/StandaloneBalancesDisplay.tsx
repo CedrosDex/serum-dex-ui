@@ -38,12 +38,14 @@ import Blt from '../assets/logos/Blt.png';
 import Bop from '../assets/logos/Bop.png';
 import Btc from '../assets/logos/Btc.png';
 import Cato from '../assets/logos/Cato.png';
+import Cave from '../assets/logos/Cave.png';
 import Cel from '../assets/logos/Cel.png';
 import Cheems from '../assets/logos/Cheems.png';
 import Comp from '../assets/logos/Comp.png';
 import Cope from '../assets/logos/Cope.png';
 import Cream from '../assets/logos/Cream.png';
 import Crp from '../assets/logos/Crp.png';
+import Cwar from '../assets/logos/Cwar.png';
 import Cys from '../assets/logos/Cys.png';
 import Dateicon from '../assets/logos/Date.png';
 import Dxl from '../assets/logos/Dxl.png';
@@ -55,6 +57,7 @@ import Fries from '../assets/logos/Fries.png';
 import Front from '../assets/logos/Front.png';
 import Ftr from '../assets/logos/Ftr.png';
 import Ftt from '../assets/logos/Ftt.png';
+import Gene from '../assets/logos/Gene.png';
 import Gofx from '../assets/logos/Gofx.png';
 import Grape from '../assets/logos/Grape.png';
 import Grt from '../assets/logos/Grt.png';
@@ -77,6 +80,7 @@ import Linkicon from '../assets/logos/Link.png';
 import Liq from '../assets/logos/Liq.png';
 import Lqid from '../assets/logos/Lqid.png';
 import Lua from '../assets/logos/Lua.png';
+import Mana from '../assets/logos/Mana.png';
 import Maps from '../assets/logos/Maps.png';
 import Mapspool from '../assets/logos/Mapspool.png';
 import Math from '../assets/logos/Math.png';
@@ -87,6 +91,7 @@ import Mnde from '../assets/logos/Mnde.png';
 import Mngo from '../assets/logos/Mngo.png';
 import Mola from '../assets/logos/Mola.png';
 import Msol from '../assets/logos/Msol.png';
+import Nfd from '../assets/logos/Nfd.png';
 import Oogi from '../assets/logos/Oogi.png';
 import Orca from '../assets/logos/Orca.png';
 import Oxs from '../assets/logos/Oxs.png';
@@ -110,6 +115,7 @@ import Rope from '../assets/logos/Rope.png';
 import Rsr from '../assets/logos/Rsr.png';
 import Sail from '../assets/logos/Sail.png';
 import Samo from '../assets/logos/Samo.png';
+import Sand from '../assets/logos/Sand.png';
 import Sbr from '../assets/logos/Sbr.png';
 import Seco from '../assets/logos/Seco.png';
 import Shib from '../assets/logos/Shib.png';
@@ -324,12 +330,14 @@ export default function StandaloneBalancesDisplay() {
     'BMBO' : Bmbo,
     'BTC' : Btc,
     'CATO' : Cato,
+    'CAVE' : Cave,
     'CEL' : Cel,
     'CHEEMS' : Cheems,
     'COMP' : Comp,
     'COPE' : Cope,
     'CREAM' : Cream,
     'CRP' : Crp,
+    'CWAR' : Cwar,
     'CYS' : Cys,
     'DATE' : Dateicon,
     'DXL' : Dxl,
@@ -341,6 +349,7 @@ export default function StandaloneBalancesDisplay() {
     'FRONT' : Front,
     'FTR' : Ftr,
     'FTT' : Ftt,
+    'GENE' : Gene,
     'GOFX' : Gofx,
     'GRAPE' : Grape,
     'GRT' : Grt,
@@ -363,6 +372,7 @@ export default function StandaloneBalancesDisplay() {
     'LIQ' : Liq,
     'LQID' : Lqid,
     'LUA' : Lua,
+    'MANA' : Mana,
     'MAPS' : Maps,
     'MAPSPOOL' : Mapspool,
     'MATH' : Math,
@@ -373,6 +383,7 @@ export default function StandaloneBalancesDisplay() {
     'MNGO' : Mngo,
     'MOLA' : Mola,
     'mSOL' : Msol,
+    'NFD' : Nfd,
     'OOGI' : Oogi,
     'ORCA' : Orca,
     'OXS' : Oxs,
@@ -390,6 +401,7 @@ export default function StandaloneBalancesDisplay() {
     'RSR' : Rsr,
     'SAIL' : Sail,
     'SAMO' : Samo,
+    'SAND' : Sand,
     'SBR' : Sbr,
     'SECO' : Seco,
     'SHIB' : Shib, 

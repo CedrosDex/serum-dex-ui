@@ -41,7 +41,7 @@ export const TVChartContainer = () => {
   const defaultProps: ChartContainerProps = {
     symbol: 'BTC/USDC',
     // @ts-ignore
-    interval: '60',
+    interval: '5',
     auto_save_delay: 5,
     theme: 'Dark',
     containerId: 'tv_chart_container',
