@@ -28,6 +28,7 @@ import Crp from '../assets/logos/Crp.png';
 import Cwar from '../assets/logos/Cwar.png';
 import Cys from '../assets/logos/Cys.png';
 import Dateicon from '../assets/logos/Date.png';
+import Dfl from '../assets/logos/Dfl.png';
 import Dxl from '../assets/logos/Dxl.png';
 import Dydx from '../assets/logos/Dydx.png';
 import Eth from '../assets/logos/Eth.png';
@@ -49,6 +50,7 @@ import Inicon from '../assets/logos/In.png';
 import Isola from '../assets/logos/Isola.png';
 import Ivn from '../assets/logos/Ivn.png';
 import Jet from '../assets/logos/Jet.png';
+import Jsol from '../assets/logos/Jsol.png';
 import Keep from '../assets/logos/Keep.png';
 import Kin from '../assets/logos/Kin.png';
 import Kuro from '../assets/logos/Kuro.png';
@@ -99,6 +101,7 @@ import Sand from '../assets/logos/Sand.png';
 import Sbr from '../assets/logos/Sbr.png';
 import Seco from '../assets/logos/Seco.png';
 import Shib from '../assets/logos/Shib.png';
+import Shill from '../assets/logos/Shill.png';
 import Slim from '../assets/logos/Slim.png';
 import Slnd from '../assets/logos/Slnd.png';
 import Slrs from '../assets/logos/Slrs.png';
@@ -110,6 +113,7 @@ import Solc from '../assets/logos/Solc.png';
 import Solape from '../assets/logos/Solape.png';
 import Soldoge from '../assets/logos/Soldoge.png';
 import Solpad from '../assets/logos/Solpad.png';
+import Sonar from '../assets/logos/Sonar.png';
 import Srm from '../assets/logos/Srm.png';
 import Stars from '../assets/logos/Stars.png';
 import Step from '../assets/logos/Step.png';
@@ -378,6 +382,7 @@ function MarketSelector({
     'CWAR/USDC' : Cwar,
     'CYS/USDC' : Cys,
     'DATE/USDC' : Dateicon,
+    'DFL/USDC' : Dfl,
     'DXL/USDC' : Dxl,
     'DYDX/USDC' : Dydx,
     'ETH/USDT' : Eth,
@@ -400,6 +405,7 @@ function MarketSelector({
     'ISOLA/USDT' : Isola,
     'IVN/USDC' : Ivn,
     'JET/USDC' : Jet,
+    'JSOL/USDC' : Jsol,
     'KEEP/USDC' : Keep,
     'KIN/USDC' : Kin,
     'KURO/USDC' : Kuro,
@@ -444,6 +450,7 @@ function MarketSelector({
     'SBR/USDC' : Sbr,
     'SECO/USDC' : Seco,
     'SHIB/USDC' : Shib,
+    'SHILL/USDC' : Shill,
     'SLIM/SOL' : Slim,
     'SLND/USDC' : Slnd,
     'SLRS/USDC' : Slrs,
@@ -455,6 +462,7 @@ function MarketSelector({
     'SOLAPE/USDC' : Solape,
     'SOLDOGE/USDC' : Soldoge,
     'SOLPAD/USDC' : Solpad,
+    'SONAR/USDC' : Sonar,
     'SRM/USDC' : Srm,
     'STARS/USDC' : Stars,
     'STEP/USDC' : Step,
