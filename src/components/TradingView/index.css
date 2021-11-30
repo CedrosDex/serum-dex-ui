@@ -1,6 +1,7 @@
 .TVChartContainer {
   height: 100%;
   width: 100%;
+  border: 1px solid #303b4b;
 }
 
 .TVChartContainer iframe {

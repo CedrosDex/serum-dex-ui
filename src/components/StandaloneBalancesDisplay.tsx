@@ -48,6 +48,7 @@ import Crp from '../assets/logos/Crp.png';
 import Cwar from '../assets/logos/Cwar.png';
 import Cys from '../assets/logos/Cys.png';
 import Dateicon from '../assets/logos/Date.png';
+import Dfl from '../assets/logos/Dfl.png';
 import Dxl from '../assets/logos/Dxl.png';
 import Dydx from '../assets/logos/Dydx.png';
 import Eth from '../assets/logos/Eth.png';
@@ -69,6 +70,7 @@ import Inicon from '../assets/logos/In.png';
 import Isola from '../assets/logos/Isola.png';
 import Ivn from '../assets/logos/Ivn.png';
 import Jet from '../assets/logos/Jet.png';
+import Jsol from '../assets/logos/Jsol.png';
 import Keep from '../assets/logos/Keep.png';
 import Kin from '../assets/logos/Kin.png';
 import Kuro from '../assets/logos/Kuro.png';
@@ -119,6 +121,7 @@ import Sand from '../assets/logos/Sand.png';
 import Sbr from '../assets/logos/Sbr.png';
 import Seco from '../assets/logos/Seco.png';
 import Shib from '../assets/logos/Shib.png';
+import Shill from '../assets/logos/Shill.png';
 import Slim from '../assets/logos/Slim.png';
 import Slnd from '../assets/logos/Slnd.png';
 import Slrs from '../assets/logos/Slrs.png';
@@ -130,6 +133,7 @@ import Solc from '../assets/logos/Solc.png';
 import Solape from '../assets/logos/Solape.png';
 import Soldoge from '../assets/logos/Soldoge.png';
 import Solpad from '../assets/logos/Solpad.png';
+import Sonar from '../assets/logos/Sonar.png';
 import Srm from '../assets/logos/Srm.png';
 import Stars from '../assets/logos/Stars.png';
 import Step from '../assets/logos/Step.png';
@@ -340,6 +344,7 @@ export default function StandaloneBalancesDisplay() {
     'CWAR' : Cwar,
     'CYS' : Cys,
     'DATE' : Dateicon,
+    'DFL' : Dfl,
     'DXL' : Dxl,
     'DYDX' : Dydx,
     'ETH' : Eth,
@@ -361,6 +366,7 @@ export default function StandaloneBalancesDisplay() {
     'ISOLA' : Isola,
     'IVN' : Ivn,
     'JET' : Jet,
+    'JSOL' : Jsol,
     'KEEP' : Keep,
     'KIN' : Kin,
     'KURO' : Kuro,
@@ -405,6 +411,7 @@ export default function StandaloneBalancesDisplay() {
     'SBR' : Sbr,
     'SECO' : Seco,
     'SHIB' : Shib, 
+    'SHILL' : Shill,
     'SLIM' : Slim,
     'SLND' : Slnd,
     'SLRS' : Slrs,
@@ -416,6 +423,7 @@ export default function StandaloneBalancesDisplay() {
     'SOLAPE' : Solape,
     'SOLDOGE' : Soldoge,
     'SOLPAD' : Solpad,
+    'SONAR' : Sonar,
     'SRM' : Srm,
     'STARS' : Stars,
     'STEP' : Step,
