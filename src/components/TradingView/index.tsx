@@ -31,7 +31,7 @@ export interface ChartContainerProps {
   containerId: ChartingLibraryWidgetOptions['container_id'];
   theme: string;
   chartType: ChartStyle
-  disabled_features: string;
+  disabled_features: ChartingLibraryWidgetOptions['disabled_features'];
 }
 
 export interface ChartContainerState {}
@@ -53,7 +53,7 @@ export const TVChartContainer = () => {
     fullscreen: false,
     autosize: true,
     datafeedUrl: BONFIDA_DATA_FEED,
-    studiesOverrides: {}
+    studiesOverrides: {},
   };
 
   const tvWidgetRef = React.useRef<IChartingLibraryWidget | null>(null);
@@ -89,7 +89,7 @@ export const TVChartContainer = () => {
       auto_save_delay: 5,
 
       locale: language,
-      disabled_features: ['use_localstorage_for_settings'],
+      disabled_features: ['use_localstorage_for_settings', 'header_widget', 'left_toolbar'],
       enabled_features: ['study_templates'],
       load_last_chart: true,
       client_id: defaultProps.clientId,
