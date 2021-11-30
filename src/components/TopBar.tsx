@@ -7,6 +7,8 @@ import { Button, Col, Menu, Popover, Row, Select } from 'antd';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.svg';
+import spain from '../assets/spain.svg.png';
+import england from '../assets/england.svg.png';
 import styled from 'styled-components';
 import { useWallet } from '../utils/wallet';
 import { ENDPOINTS, useConnectionConfig } from '../utils/connection';
@@ -260,8 +262,24 @@ export default function TopBar() {
                 placeholder={language === 'en' ? 'Select language' : 'Seleccione el idioma de la interfaz'}
                 defaultValue={language?.toString()}
               >
-                <Select.Option value="es">Español</Select.Option>
-                <Select.Option value="en">English</Select.Option>
+                <Select.Option value="es">
+                  <img
+                      src={spain}
+                      style={{height: 10,
+                        marginRight: 20,}}
+                      alt=""
+                    />
+                  Español
+                </Select.Option>
+                <Select.Option value="en">
+                  <img
+                      src={england}
+                      style={{height: 10,
+                        marginRight: 20,}}
+                      alt=""
+                    />
+                  English
+                </Select.Option>
               </Select>
             </Col>
           </Row>
