@@ -595,7 +595,7 @@ function MarketSelector({
                 backgroundColor: i % 2 === 0 ? 'rgb(39, 44, 61)' : null,
               }}
             >
-              <img src={Logos[name]} width="35px"/> {name} {deprecated ? ' (Deprecated)' : null}
+              <img src={Logos[name]} width="30px"/> {name} {deprecated ? ' (Deprecated)' : null}
             </Option>
           ))}
       </OptGroup>
