@@ -10,10 +10,13 @@ import Abr from '../assets/logos/Abr.png';
 import Akro from '../assets/logos/Akro.png';
 import Aleph from '../assets/logos/Aleph.png';
 import Alm from '../assets/logos/Alm.png';
+import Apt from '../assets/logos/Apt.png';
 import Atlas from '../assets/logos/Atlas.png';
 import Aury from '../assets/logos/Aury.png';
 import Axs from '../assets/logos/Axs.png';
 import Bmbo from '../assets/logos/Bmbo.png';
+import Bnb from '../assets/logos/Bnb.png';
+import Boku from '../assets/logos/Boku.png';
 import Blt from '../assets/logos/Blt.png';
 import Bop from '../assets/logos/Bop.png';
 import Btc from '../assets/logos/Btc.png';
@@ -53,6 +56,7 @@ import Jet from '../assets/logos/Jet.png';
 import Jsol from '../assets/logos/Jsol.png';
 import Keep from '../assets/logos/Keep.png';
 import Kin from '../assets/logos/Kin.png';
+import Kko from '../assets/logos/Kko.png';
 import Kuro from '../assets/logos/Kuro.png';
 import Larix from '../assets/logos/Larix.png';
 import Ldo from '../assets/logos/Ldo.png';
@@ -81,6 +85,7 @@ import Oxy from '../assets/logos/Oxy.png';
 import Oxypool from '../assets/logos/Oxypool.png';
 import Paxg from '../assets/logos/Paxg.png';
 import Perp from '../assets/logos/Perp.png';
+import People from '../assets/logos/People.png';
 import Polis from '../assets/logos/Polis.png';
 import Port from '../assets/logos/Port.png';
 import Prt from '../assets/logos/Prt.png';
@@ -131,9 +136,11 @@ import Ubxt from '../assets/logos/Ubxt.png';
 import Uni from '../assets/logos/Uni.png';
 import Ups from '../assets/logos/Ups.png';
 import Usdt from '../assets/logos/Usdt.png';
+import Vi from '../assets/logos/Vi.png';
 import Wag from '../assets/logos/Wag.png';
 import Woo from '../assets/logos/Woo.png';
 import Woof from '../assets/logos/Woof.png';
+import Xtag from '../assets/logos/Xtag.png';
 import Yfi from '../assets/logos/Yfi.png';
 
 import {
@@ -295,7 +302,7 @@ function TradePageInner() {
       <Wrapper>
         <Row
           align="middle"
-          style={{ paddingLeft: 5, paddingRight: 5}}
+          style={{ paddingLeft: 5, paddingRight: 5, paddingBottom: 10,}}
           gutter={16}
         >
           <Col>
@@ -363,11 +370,14 @@ function MarketSelector({
     'AKRO/USDC' : Akro,
     'ALEPH/USDC' : Aleph,
     'ALM/USDC' : Alm,
+    'APT/USDC' : Apt,
     'ATLAS/USDC' : Atlas,
     'AURY/USDC' : Aury,
     'AXS/USDC' : Axs,
     'BLT/USDC' : Blt,
     'BMBO/USDC' : Bmbo,
+    'BNB/USDC' : Bnb,
+    'BOKU/USDC' : Boku,
     'BOP/USDC' : Bop,
     'BTC/USDT' : Btc,
     'BTC/USDC' : Btc,
@@ -406,6 +416,7 @@ function MarketSelector({
     'IVN/USDC' : Ivn,
     'JET/USDC' : Jet,
     'JSOL/USDC' : Jsol,
+    'KKO/USDC' : Kko,
     'KEEP/USDC' : Keep,
     'KIN/USDC' : Kin,
     'KURO/USDC' : Kuro,
@@ -436,6 +447,7 @@ function MarketSelector({
     'OXYPOOL/USDC' : Oxypool,
     'PAXG/USDC' : Paxg,
     'PERP/USDC' : Perp,
+    'PEOPLE/USDC' : People,
     'POLIS/USDC' : Polis,
     'PORT/USDC' : Port,
     'PRT/USDC' : Prt,
@@ -480,9 +492,11 @@ function MarketSelector({
     'UNI/USDC' : Uni,
     'UPS/USDC' : Ups,
     'USDT/USDC' : Usdt,
+    'VI/USDC' : Vi,
     'WAG/USDC' : Wag,
     'WOO/USDC' : Woo,
     'WOOF/USDC' : Woof,
+    'XTAG/USDC' : Xtag,
     'YFI/USDC' : Yfi,
     'renBCH/USDC' : Renbch,
     'renBTC/USDC' : Renbtc,
@@ -512,11 +526,11 @@ function MarketSelector({
     <Select
       showSearch
       size={'large'}
-      style={{ width: 200 }}
+      style={{ width: 200}}
       placeholder={placeholder || 'Select a market'}
       optionFilterProp="name"
       onSelect={onSetMarketAddress}
-      listHeight={400}
+      listHeight={500}
       value={selectedMarket}
       filterOption={(input, option) =>
         option?.name?.toLowerCase().indexOf(input.toLowerCase()) >= 0

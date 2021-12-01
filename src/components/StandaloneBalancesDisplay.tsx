@@ -30,12 +30,15 @@ import Abr from '../assets/logos/Abr.png';
 import Akro from '../assets/logos/Akro.png';
 import Aleph from '../assets/logos/Aleph.png';
 import Alm from '../assets/logos/Alm.png';
+import Apt from '../assets/logos/Apt.png';
 import Atlas from '../assets/logos/Atlas.png';
 import Aury from '../assets/logos/Aury.png';
 import Axs from '../assets/logos/Axs.png';
 import Bmbo from '../assets/logos/Bmbo.png';
 import Blt from '../assets/logos/Blt.png';
+import Bnb from '../assets/logos/Bnb.png';
 import Bop from '../assets/logos/Bop.png';
+import Boku from '../assets/logos/Boku.png';
 import Btc from '../assets/logos/Btc.png';
 import Cato from '../assets/logos/Cato.png';
 import Cave from '../assets/logos/Cave.png';
@@ -73,6 +76,7 @@ import Jet from '../assets/logos/Jet.png';
 import Jsol from '../assets/logos/Jsol.png';
 import Keep from '../assets/logos/Keep.png';
 import Kin from '../assets/logos/Kin.png';
+import Kko from '../assets/logos/Kko.png';
 import Kuro from '../assets/logos/Kuro.png';
 import Larix from '../assets/logos/Larix.png';
 import Ldo from '../assets/logos/Ldo.png';
@@ -101,6 +105,7 @@ import Oxy from '../assets/logos/Oxy.png';
 import Oxypool from '../assets/logos/Oxypool.png';
 import Paxg from '../assets/logos/Paxg.png';
 import Perp from '../assets/logos/Perp.png';
+import People from '../assets/logos/People.png';
 import Polis from '../assets/logos/Polis.png';
 import Port from '../assets/logos/Port.png';
 import Prt from '../assets/logos/Prt.png';
@@ -152,9 +157,11 @@ import Uni from '../assets/logos/Uni.png';
 import Ups from '../assets/logos/Ups.png';
 import Usdc from '../assets/logos/Usdc.png';
 import Usdt from '../assets/logos/Usdt.png';
+import Vi from '../assets/logos/Vi.png';
 import Wag from '../assets/logos/Wag.png';
 import Woo from '../assets/logos/Woo.png';
 import Woof from '../assets/logos/Woof.png';
+import Xtag from '../assets/logos/Xtag.png';
 import Yfi from '../assets/logos/Yfi.png';
 
 
@@ -326,12 +333,15 @@ export default function StandaloneBalancesDisplay() {
     'AKRO' : Akro,
     'ALEPH' : Aleph,
     'ALM' : Alm,
+    'APT' : Apt, 
     'ATLAS' : Atlas,
     'AURY' : Aury,
     'AXS' : Axs, 
     'BLT' : Blt,
     'BOP' : Bop,
     'BMBO' : Bmbo,
+    'BNB' : Bnb,
+    'BOKU' : Boku,  
     'BTC' : Btc,
     'CATO' : Cato,
     'CAVE' : Cave,
@@ -369,6 +379,7 @@ export default function StandaloneBalancesDisplay() {
     'JSOL' : Jsol,
     'KEEP' : Keep,
     'KIN' : Kin,
+    'KKO' : Kko, 
     'KURO' : Kuro,
     'LARIX' : Larix,
     'LDO' : Ldo,
@@ -397,6 +408,7 @@ export default function StandaloneBalancesDisplay() {
     'OXYPOOL' : Oxypool,
     'PAXG' : Paxg,
     'PERP' : Perp,
+    'PEOPLE' : People, 
     'POLIS' : Polis,
     'PORT' : Port,
     'PRT' : Prt,
@@ -442,9 +454,11 @@ export default function StandaloneBalancesDisplay() {
     'UPS' : Ups, 
     'USDT' : Usdt,
     'USDC' : Usdc,
+    'VI' : Vi, 
     'WAG' : Wag,
     'WOO' : Woo,
     'WOOF' : Woof,
+    'XTAG' : Xtag,
     'YFI' : Yfi,
     'renBCH' : Renbch,
     'renBTC' : Renbtc,
