@@ -169,7 +169,7 @@ export default function TopBar() {
             flex: 1,
           }}
         >
-                    <Menu.Item key={tradePageUrl} style={{ margin: '0 10px 0 20px' }}>
+          <Menu.Item key={tradePageUrl} style={{ margin: '0 10px 0 20px' }}>
             {language === 'en' ? 'TRADE' : 'OPERAR'}
           </Menu.Item>
           {connected && (!searchFocussed || location.pathname === '/balances') && (
@@ -177,6 +177,15 @@ export default function TopBar() {
               {language === 'en' ? 'BALANCES' : 'SALDOS'}
             </Menu.Item>
           )}
+          <Menu.Item key='/perps' style={{ margin: '0 10px 0 20px' }}>
+                <a
+                  href={EXTERNAL_LINKS['/perps']}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  PERPS
+                </a>
+          </Menu.Item>
           {!searchFocussed && (
             <Menu.SubMenu
             title={language === 'en' ? 'LEARN' : 'APRENDIZAJE'}
