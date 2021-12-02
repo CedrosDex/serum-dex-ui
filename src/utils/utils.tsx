@@ -183,3 +183,69 @@ export function flatten(obj, { prefix = '', restrictTo }) {
   })(obj, prefix, restrict);
   return result;
 }
+
+interface WindowSize {
+  width: number;
+  height: number;
+}
+
+export const useWindowSize = (): WindowSize => {
+  const [windowSize, setWindowSize] = useState<WindowSize>({
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    const handler = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    // Set size at the first client-side load
+    handler();
+
+    window.addEventListener("resize", handler);
+
+    // Remove event listener on cleanup
+    return () => {
+      window.removeEventListener("resize", handler);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return windowSize;
+};
+
+
+export const useSmallScreen = (breakpoint: string = "sm") => {
+  const { width } = useWindowSize();
+  switch (breakpoint) {
+    case "xs":
+      return width < 600;
+    case "sm":
+      return width < 960;
+    case "md":
+      return width < 1280;
+    case "lg":
+      return width < 1920;
+    default:
+      return width < 960;
+  }
+};
+
+
+export async function apiGet(path) {
+  try {
+    let response = await fetch(path);
+    if (!response.ok) {
+      return [];
+    }
+    let json = await response.json();
+    return json;
+  } catch (err) {
+    console.log(err);
+    return [];
+  }
+}
