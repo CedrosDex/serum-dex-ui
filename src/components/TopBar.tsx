@@ -215,20 +215,6 @@ export default function TopBar() {
             </Menu.SubMenu>
           )}
         </Menu>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            paddingRight: 5,
-          }}
-        >
-          <AppSearch
-            onFocus={() => setSearchFocussed(true)}
-            onBlur={() => setSearchFocussed(false)}
-            focussed={searchFocussed}
-            width={searchFocussed ? '350px' : '35px'}
-          />
-        </div>
         <div>
           <Row
             align="middle"

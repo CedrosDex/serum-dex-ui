@@ -61,7 +61,7 @@ export default function WalletConnect({ width }: { width?: number }) {
             </Typography>
           ) : (
             <Typography className={classes.coloredText}>
-              {language === 'en' ? 'Disconnect' : 'Desconectar'}
+              {wallet?.publicKey.toString().slice(0,4) + "..." + wallet?.publicKey.toString().substr(wallet?.publicKey.toString().length - 4)}
             </Typography>
           )}
         </Button>
