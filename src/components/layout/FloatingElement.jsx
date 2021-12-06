@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  margin: 10px;
-  padding: 20px;
+  margin: 5px 10px 19px;
+  padding: 24px;
   background-color: #1a2029;
-  border-radius: 2%;
-  border: 1px solid #303B4B;
+  border-radius: 16px;
+  border: 1px solid #303b4b;
 `;
 
 export default function FloatingElement({
