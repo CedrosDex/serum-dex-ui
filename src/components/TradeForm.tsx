@@ -288,16 +288,18 @@ export default function TradeForm({
           style={{
             marginBottom: 8,
             width: '100%',
+            justifyContent: 'space-between',
+            display: 'flex'
           }}
         >
           <Radio.Button
             value="buy"
             style={{
-              width: '50%',
+              width: '48%',
               textAlign: 'center',
               background: side === 'buy' ? '#00BA13' : '',
               borderColor: side === 'buy' ? '#00BA13' : '',
-              borderRadius: '5%',
+              borderRadius: 8,
             }}
           >
             {language === 'en' ? 'BUY': 'COMPRAR'}
@@ -305,11 +307,11 @@ export default function TradeForm({
           <Radio.Button
             value="sell"
             style={{
-              width: '50%',
+              width: '48%',
               textAlign: 'center',
               background: side === 'sell' ? '#B80009' : '',
               borderColor: side === 'sell' ? '#B80009' : '',
-              borderRadius: '5%',
+              borderRadius: 8,
             }}
           >
             {language === 'en' ? 'SELL': 'VENDER'}
