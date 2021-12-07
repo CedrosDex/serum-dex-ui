@@ -1,8 +1,10 @@
 .TVChartContainer {
-  height: 100%;
+  height: 'calc(100% - 10px)';
   width: 100%;
-  border: 1px solid #303b4b;
+  margin: 5px 10px 19px;
+  background-color: #1a2029;
   border-radius: 16px;
+  border: 1px solid #303b4b;
 }
 
 .TVChartContainer iframe {
