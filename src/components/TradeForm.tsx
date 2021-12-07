@@ -304,7 +304,7 @@ export default function TradeForm({
           >
             {language === 'en' ? 'BUY': 'COMPRAR'}
           </Radio.Button>
-          <Radio.Button
+          <Button
             value="sell"
             style={{
               width: '48%',
@@ -313,9 +313,10 @@ export default function TradeForm({
               borderColor: side === 'sell' ? '#B80009' : '',
               borderRadius: 8,
             }}
+            onClick={(e) => {setSide('sell')}}
           >
             {language === 'en' ? 'SELL': 'VENDER'}
-          </Radio.Button>
+          </Button>
         </Radio.Group>
         <Input
           style={{ textAlign: 'right', paddingBottom: 8 }}
