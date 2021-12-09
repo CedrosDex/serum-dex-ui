@@ -33,7 +33,7 @@ export default function Index() {
             : ' Puedes obtener SOL y otros tokens de Solana.'}
         </Paragraph>
       </Typography>
-      <Tabs defaultActiveKey="orders">
+      <Tabs defaultActiveKey="orders" style={{ letterSpacing: 1 }}>
         <TabPane
           tab={language === 'en' ? 'Open Orders' : 'Órdenes abiertas'}
           key="orders"

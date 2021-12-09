@@ -300,6 +300,8 @@ export default function TradeForm({
               background: side === 'buy' ? '#00BA13' : '',
               borderColor: side === 'buy' ? '#00BA13' : '',
               borderRadius: 8,
+              fontWeight: 500,
+              letterSpacing: 1
             }}
           >
             {language === 'en' ? 'BUY': 'COMPRAR'}
@@ -312,6 +314,8 @@ export default function TradeForm({
               background: side === 'sell' ? '#B80009' : '',
               borderColor: side === 'sell' ? '#B80009' : '',
               borderRadius: 8,
+              letterSpacing: 1,
+              fontWeight: 500
             }}
             onClick={(e) => {setSide('sell')}}
           >
@@ -380,7 +384,7 @@ export default function TradeForm({
           size="large"
           loading={submitting}
         >
-          {language === 'en' ? 'Buy': 'Comprar'} {baseCurrency}
+          {language === 'en' ? 'BUY': 'COMPRAR'} {baseCurrency}
         </BuyButton>
       ) : (
         <SellButton
@@ -391,7 +395,7 @@ export default function TradeForm({
           size="large"
           loading={submitting}
         >
-          {language === 'en' ? 'Sell': 'Vender'} {baseCurrency}
+          {language === 'en' ? 'SELL': 'VENDER'} {baseCurrency}
         </SellButton>
       )}
     </FloatingElement>

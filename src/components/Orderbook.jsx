@@ -10,11 +10,12 @@ import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
 
 const Title = styled.div`
   color: rgba(255, 255, 255, 1);
+  font-weight: bold;
 `;
 
 const SizeTitle = styled(Row)`
   padding: 20px 0 14px;
-  color: #1B98E0;
+  color: #1b98e0;
 `;
 
 const MarkPriceTitle = styled(Row)`
@@ -58,7 +59,7 @@ export default function Orderbook({ smallScreen, depth = 7, onPrice, onSize }) {
     ? localStorage.getItem('language')
     : 'es';
 
-    useInterval(() => {
+  useInterval(() => {
     if (
       !currentOrderbookData.current ||
       JSON.stringify(currentOrderbookData.current) !==
@@ -114,7 +115,7 @@ export default function Orderbook({ smallScreen, depth = 7, onPrice, onSize }) {
       style={
         smallScreen ? { flex: 1 } : { height: '500px', overflow: 'hidden' }
       }
-      >
+    >
       <Title>{language === 'en' ? 'Orderbook' : 'Registro de órdenes'}</Title>
       <SizeTitle>
         <Col span={12} style={{ textAlign: 'left' }}>

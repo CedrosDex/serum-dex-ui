@@ -29,6 +29,8 @@ export default function StandaloneTokenAccountsSelect({
     selectedValue = undefined;
   }
 
+  const language = (localStorage.getItem('language')? localStorage.getItem('language'): 'es')
+
   const setTokenAccountForCoin = (value) => {
     if (!mint) {
       notify({
@@ -45,7 +47,7 @@ export default function StandaloneTokenAccountsSelect({
 
   return (
     <React.Fragment>
-      {label && <Col span={8}>Token account:</Col>}
+      {label && <Col span={8} style={{fontWeight: 500}}>{language === 'en' ? "Token account:" : "Cuenta:"}</Col>}
       <Col span={label ? 13 : 21}>
         <Select
           style={{ width: '100%' }}

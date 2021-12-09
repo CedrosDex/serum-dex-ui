@@ -169,15 +169,15 @@ export default function TopBar() {
             flex: 1,
           }}
         >
-          <Menu.Item key={tradePageUrl} style={{ margin: '0 10px 0 20px' }}>
+          <Menu.Item key={tradePageUrl} style={{ margin: '0 10px 0 20px', letterSpacing: 1 }}>
             {language === 'en' ? 'TRADE' : 'OPERAR'}
           </Menu.Item>
           {connected && (!searchFocussed || location.pathname === '/balances') && (
-            <Menu.Item key="/balances" style={{ margin: '0 10px' }}>
+            <Menu.Item key="/balances" style={{ margin: '0 10px', letterSpacing: 1 }}>
               {language === 'en' ? 'BALANCES' : 'SALDOS'}
             </Menu.Item>
           )}
-          <Menu.Item key='/perps' style={{ margin: '0 10px 0 20px' }}>
+          <Menu.Item key='/perps' style={{ margin: '0 10px 0 20px', letterSpacing: 1 }}>
                 <a
                   href={EXTERNAL_LINKS['/perps']}
                   target="_blank"
@@ -192,7 +192,7 @@ export default function TopBar() {
             onTitleClick={() =>
                 window.open(EXTERNAL_LINKS['/learn'], '_blank')
               }
-              style={{ margin: '0 0px 0 10px' }}
+              style={{ margin: '0 0px 0 10px', letterSpacing: 1 }}
             >
               <Menu.Item key="/explorer">
                 <a

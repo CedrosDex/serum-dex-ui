@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   },
   coloredText: {
     textTransform: "capitalize",
-    fontWeight: 400,
+    fontWeight: 500,
     backgroundImage: "linear-gradient(180deg, #1B98E0 60%, #EE03A8 100%)",
     backgroundClip: "text",
     color: "#60C0CB",

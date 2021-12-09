@@ -502,7 +502,7 @@ export default function StandaloneBalancesDisplay() {
               justify="space-between"
               style={{ paddingBottom: 12 }}
             >
-              <Col>{(language === 'en')?"Wallet balance:" : "Saldo:"}</Col>
+              <Col style={{fontWeight: 500}}>{(language === 'en')?"Wallet balance:" : "Saldo:"}</Col>
               <Col>{balances && balances.wallet}</Col>
             </RowBox>
             <RowBox
@@ -510,7 +510,7 @@ export default function StandaloneBalancesDisplay() {
               justify="space-between"
               style={{ paddingBottom: 12 }}
             >
-              <Col>{(language === 'en')?"Unsettled balance:" : "Saldo sin liquidar:"}</Col>
+              <Col style={{fontWeight: 500}}>{(language === 'en')?"Unsettled balance:" : "Saldo sin liquidar:"}</Col>
               <Col>{balances && balances.unsettled}</Col>
             </RowBox>
             <RowBox align="middle" justify="space-around">
@@ -520,21 +520,21 @@ export default function StandaloneBalancesDisplay() {
                   size="large"
                   onClick={() => setBaseOrQuote(baseOrQuote)}
                 >
-                  {(language === 'en')?"Deposit" : "Depositar"}
+                  <div style={{fontWeight: 600}}>{(language === 'en')?"Deposit" : "Depositar"}</div>
                 </ActionButton>
               </Col>
               <Col style={{ width: 150 }}>
                 <ActionButton block size="large" onClick={onSettleFunds}>
-                {(language === 'en')?"Settle" : "Liquidar"}
+                  <div style={{fontWeight: 600}}>{(language === 'en')?"Settle" : "Liquidar"}</div>
                 </ActionButton>
               </Col>
             </RowBox>
             <Tip>
-            {(language === 'en')?"All deposits go to your " : "Todos los depósitos irán a su "}
+            {(language === 'en')?"All deposits go to your " : "Todos los depósitos irán a su billetera "}
               <Link external to={providerUrl}>
                 {providerName}
               </Link>{' '}
-              {(language === 'en')?"wallet" : "billetera"}
+              {(language === 'en')?"wallet" : ""}
             </Tip>
           </React.Fragment>
         ),

@@ -8,6 +8,7 @@ import { BonfidaTrade } from '../utils/types';
 
 const Title = styled.div`
   color: rgba(255, 255, 255, 1);
+  font-weight: bold;
 `;
 const SizeTitle = styled(Row)`
   padding: 20px 0 14px;
