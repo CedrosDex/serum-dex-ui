@@ -11,6 +11,7 @@ import { useMarket, USE_MARKETS } from '../../utils/markets';
 import * as saveLoadAdapter from './saveLoadAdapter';
 import { flatten } from '../../utils/utils';
 import { BONFIDA_DATA_FEED } from '../../utils/bonfidaConnector';
+import axios from 'axios';
 
 export interface ChartContainerProps {
   symbol: ChartingLibraryWidgetOptions['symbol'];
@@ -148,6 +149,21 @@ export const TVChartContainer = () => {
       tvWidget
         // @ts-ignore
         .subscribe('onAutoSaveNeeded', () => tvWidget.saveChartToServer());
+      
+
+      //process to set the number of decimal places variably:
+      let symbol = tvWidget.symbolInterval().symbol.substring(7).replace("/","%2F")
+      let current = Math.floor(Date.now() / 1000)
+      let initTime = current - 31800
+      let timeString = "&from=" + initTime.toString() + "&to=" + current.toString()
+      let url = BONFIDA_DATA_FEED + 
+      "/history?symbol=" + symbol + "&resolution=5" + timeString + "&countback=106";
+      axios.get(url).then(response => {
+        if(response.data.c[0] < 1)
+          tvWidget.applyOverrides({'mainSeriesProperties.minTick': '10000000,1,false'})
+        else
+          tvWidget.applyOverrides({'mainSeriesProperties.minTick': '1000,1,false'})
+      })
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [market, tvWidgetRef.current]);
