@@ -159,7 +159,7 @@ export const TVChartContainer = () => {
       let url = BONFIDA_DATA_FEED + 
       "/history?symbol=" + symbol + "&resolution=5" + timeString + "&countback=106";
       axios.get(url).then(response => {
-        if(response.data.c[0] < 1)
+        if(response.data.c[0] < 0.001)
           tvWidget.applyOverrides({'mainSeriesProperties.minTick': '10000000,1,false'})
         else
           tvWidget.applyOverrides({'mainSeriesProperties.minTick': '1000,1,false'})
