@@ -9,7 +9,7 @@ import {
 } from '../../charting_library';
 import { useMarket, USE_MARKETS } from '../../utils/markets';
 import * as saveLoadAdapter from './saveLoadAdapter';
-import { flatten } from '../../utils/utils';
+import { flatten, getDecimalCount } from '../../utils/utils';
 import { BONFIDA_DATA_FEED } from '../../utils/bonfidaConnector';
 import axios from 'axios';
 
@@ -108,6 +108,7 @@ export const TVChartContainer = () => {
         'mainSeriesProperties.candleStyle.wickUpColor': '#41C77A',
         'mainSeriesProperties.candleStyle.wickDownColor': '#F23B69',
         'mainSeriesProperties.style': 3,
+        'mainSeriesProperties.priceAxisProperties.autoScale': true,
       },
       // @ts-ignore
       save_load_adapter: saveLoadAdapter,
@@ -159,10 +160,12 @@ export const TVChartContainer = () => {
       let url = BONFIDA_DATA_FEED + 
       "/history?symbol=" + symbol + "&resolution=5" + timeString + "&countback=106";
       axios.get(url).then(response => {
-        if(response.data.c[0] < 0.001)
-          tvWidget.applyOverrides({'mainSeriesProperties.minTick': '10000000,1,false'})
-        else
-          tvWidget.applyOverrides({'mainSeriesProperties.minTick': '1000,1,false'})
+        let decimals
+        if(market)
+        {
+          decimals = getDecimalCount(market.tickSize) + 1
+          tvWidget.applyOverrides({'mainSeriesProperties.minTick': (10 ** decimals).toString() + ',1,false'})
+        }
       })
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
