@@ -163,7 +163,7 @@ export const TVChartContainer = () => {
         let decimals
         if(market)
         {
-          decimals = getDecimalCount(market.tickSize) + 1
+          decimals = getDecimalCount(market.tickSize)
           tvWidget.applyOverrides({'mainSeriesProperties.minTick': (10 ** decimals).toString() + ',1,false'})
         }
       })
