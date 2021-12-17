@@ -33,6 +33,7 @@ import Crp from '../assets/logos/Crp.png';
 import Crwny from '../assets/logos/Crwny.png';
 import Cwar from '../assets/logos/Cwar.png';
 import Cys from '../assets/logos/Cys.png';
+import Dape from '../assets/logos/Dape.png';
 import Dateicon from '../assets/logos/Date.png';
 import Dfl from '../assets/logos/Dfl.png';
 import Dxl from '../assets/logos/Dxl.png';
@@ -403,6 +404,7 @@ function MarketSelector({
     'CRWNY/USDC' : Crwny,
     'CWAR/USDC' : Cwar,
     'CYS/USDC' : Cys,
+    'DAPE/USDC' : Dape,
     'DATE/USDC' : Dateicon,
     'DFL/USDC' : Dfl,
     'DXL/USDC' : Dxl,
