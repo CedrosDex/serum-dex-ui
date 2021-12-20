@@ -155,7 +155,7 @@ const Warning = () => {
           <Link className={classes.link} external to={URL_RULES}>
             aquí
           </Link>
-          ) y la <span className={classes.important}>declaración de reisgo</span>{" "}
+          ) y la <span className={classes.important}>declaración de riesgo</span>{" "}
           (disponible{" "}
           <Link className={classes.link} external to={URL_RISKS}>
             aquí
