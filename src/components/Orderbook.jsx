@@ -221,7 +221,7 @@ const MarkPriceComponent = React.memo(
 
     return (
       <MarkPriceTitle justify="center">
-        <Col style={{ color: markPriceColor }}>
+        <Col style={{ color: markPriceColor, fontSize: 17 }}>
           {markPrice > previousMarkPrice && (
             <ArrowUpOutlined style={{ marginRight: 5 }} />
           )}

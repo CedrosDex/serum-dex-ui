@@ -36,6 +36,7 @@ import Aury from '../assets/logos/Aury.png';
 import Axs from '../assets/logos/Axs.png';
 import Bmbo from '../assets/logos/Bmbo.png';
 import Blt from '../assets/logos/Blt.png';
+import Block from '../assets/logos/Block.png';
 import Bnb from '../assets/logos/Bnb.png';
 import Bop from '../assets/logos/Bop.png';
 import Boku from '../assets/logos/Boku.png';
@@ -44,12 +45,15 @@ import Cato from '../assets/logos/Cato.png';
 import Cave from '../assets/logos/Cave.png';
 import Cel from '../assets/logos/Cel.png';
 import Cheems from '../assets/logos/Cheems.png';
+import Chicks from '../assets/logos/Chicks.png';
 import Comp from '../assets/logos/Comp.png';
 import Cope from '../assets/logos/Cope.png';
 import Cream from '../assets/logos/Cream.png';
 import Crp from '../assets/logos/Crp.png';
+import Crwny from '../assets/logos/Crwny.png';
 import Cwar from '../assets/logos/Cwar.png';
 import Cys from '../assets/logos/Cys.png';
+import Dape from '../assets/logos/Dape.png';
 import Dateicon from '../assets/logos/Date.png';
 import Dfl from '../assets/logos/Dfl.png';
 import Dxl from '../assets/logos/Dxl.png';
@@ -63,6 +67,7 @@ import Ftr from '../assets/logos/Ftr.png';
 import Ftt from '../assets/logos/Ftt.png';
 import Gene from '../assets/logos/Gene.png';
 import Gofx from '../assets/logos/Gofx.png';
+import God from '../assets/logos/God.png';
 import Grape from '../assets/logos/Grape.png';
 import Grt from '../assets/logos/Grt.png';
 import Hget from '../assets/logos/Hget.png';
@@ -93,6 +98,7 @@ import Math from '../assets/logos/Math.png';
 import Media from '../assets/logos/Media.png';
 import Mer from '../assets/logos/Mer.png';
 import Merpool from '../assets/logos/Merpool.png';
+import Mix from '../assets/logos/Mix.png';
 import Mnde from '../assets/logos/Mnde.png';
 import Mngo from '../assets/logos/Mngo.png';
 import Mola from '../assets/logos/Mola.png';
@@ -111,6 +117,7 @@ import Port from '../assets/logos/Port.png';
 import Prt from '../assets/logos/Prt.png';
 import Ray from '../assets/logos/Ray.png';
 import Raypool from '../assets/logos/Raypool.png';
+import Real from '../assets/logos/Real.png';
 import Renbch from '../assets/logos/Renbch.png';
 import Renbtc from '../assets/logos/Renbtc.png';
 import Rendoge from '../assets/logos/Rendoge.png';
@@ -120,6 +127,7 @@ import Renzec from '../assets/logos/Renzec.png';
 import Rin from '../assets/logos/Rin.png';
 import Rope from '../assets/logos/Rope.png';
 import Rsr from '../assets/logos/Rsr.png';
+import Runicon from '../assets/logos/Run.png';
 import Sail from '../assets/logos/Sail.png';
 import Samo from '../assets/logos/Samo.png';
 import Sand from '../assets/logos/Sand.png';
@@ -151,6 +159,7 @@ import Sxp from '../assets/logos/Sxp.png';
 import Syp from '../assets/logos/Syp.png';
 import Tomo from '../assets/logos/Tomo.png';
 import Tox from '../assets/logos/Trollbox.png';
+import Ttt from '../assets/logos/Ttt.png';
 import Tulip from '../assets/logos/Tulip.png';
 import Ubxt from '../assets/logos/Ubxt.png';
 import Uni from '../assets/logos/Uni.png';
@@ -162,6 +171,7 @@ import Wag from '../assets/logos/Wag.png';
 import Woo from '../assets/logos/Woo.png';
 import Woof from '../assets/logos/Woof.png';
 import Xtag from '../assets/logos/Xtag.png';
+import Xvc from '../assets/logos/Xvc.png';
 import Yfi from '../assets/logos/Yfi.png';
 
 
@@ -338,6 +348,7 @@ export default function StandaloneBalancesDisplay() {
     'AURY' : Aury,
     'AXS' : Axs, 
     'BLT' : Blt,
+    'BLOCK' : Block,
     'BOP' : Bop,
     'BMBO' : Bmbo,
     'BNB' : Bnb,
@@ -347,12 +358,15 @@ export default function StandaloneBalancesDisplay() {
     'CAVE' : Cave,
     'CEL' : Cel,
     'CHEEMS' : Cheems,
+    'CHICKS' : Chicks,
     'COMP' : Comp,
     'COPE' : Cope,
     'CREAM' : Cream,
     'CRP' : Crp,
+    'CRWNY' : Crwny,
     'CWAR' : Cwar,
     'CYS' : Cys,
+    'DAPE' : Dape,
     'DATE' : Dateicon,
     'DFL' : Dfl,
     'DXL' : Dxl,
@@ -366,6 +380,7 @@ export default function StandaloneBalancesDisplay() {
     'FTT' : Ftt,
     'GENE' : Gene,
     'GOFX' : Gofx,
+    'GOD' : God,
     'GRAPE' : Grape,
     'GRT' : Grt,
     'HGET' : Hget,
@@ -396,6 +411,7 @@ export default function StandaloneBalancesDisplay() {
     'MEDIA' : Media,
     'MER' : Mer,
     'MERPOOL' : Merpool,
+    'MIX' : Mix,
     'MNDE' : Mnde,
     'MNGO' : Mngo,
     'MOLA' : Mola,
@@ -414,9 +430,11 @@ export default function StandaloneBalancesDisplay() {
     'PRT' : Prt,
     'RAY' : Ray,
     'RAYPOOL' : Raypool,
+    'REAL' : Real,
     'RIN' : Rin,
     'ROPE' : Rope,
     'RSR' : Rsr,
+    'RUN' : Runicon,
     'SAIL' : Sail,
     'SAMO' : Samo,
     'SAND' : Sand,
@@ -448,6 +466,7 @@ export default function StandaloneBalancesDisplay() {
     'SYP' : Syp,
     'TOMO' : Tomo,
     'TOX' : Tox,
+    'TTT' : Ttt,
     'TULIP' : Tulip,
     'UBXT' : Ubxt,
     'UNI' : Uni,
@@ -459,6 +478,7 @@ export default function StandaloneBalancesDisplay() {
     'WOO' : Woo,
     'WOOF' : Woof,
     'XTAG' : Xtag,
+    'XVC' : Xvc,
     'YFI' : Yfi,
     'renBCH' : Renbch,
     'renBTC' : Renbtc,
