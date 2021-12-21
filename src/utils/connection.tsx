@@ -11,6 +11,11 @@ export const ENDPOINTS: EndpointInfo[] = [
     endpoint: 'https://solana-api.projectserum.com',
     custom: false,
   },
+  {
+    name: 'cedros-runnode',
+    endpoint: 'https://connect.runnode.com/?apikey=7Tgub7ENXRXSBpzN6FXJ',
+    custom: false,
+  },
   { name: 'localnet', endpoint: 'http://127.0.0.1:8899', custom: false },
 ];
 
@@ -127,7 +132,7 @@ export function useAccountInfo(
   const [accountInfo, loaded] = useAsyncData<AccountInfo<Buffer> | null>(
     async () => (publicKey ? connection.getAccountInfo(publicKey) : null),
     cacheKey,
-    { refreshInterval: 60_000 },
+    { refreshInterval: 10_000 },
   );
   useEffect(() => {
     if (!publicKey) {

@@ -88,7 +88,7 @@ const useCountryCode = () => {
   return useAsyncData(fn, "useCountryCode", { refreshInterval: 60 * 1_000 });
 };
 
-const REDIRECT_LINK = "https://ftx.com/profile#a=Cedros";
+const REDIRECT_LINK = "https://ftx.us/home/#a=cedrosdex";
 
 export const Forbidden = () => {
   const [countryCode] = useCountryCode();

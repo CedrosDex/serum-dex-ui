@@ -75,6 +75,7 @@ import Mana from '../assets/logos/Mana.png';
 import Maps from '../assets/logos/Maps.png';
 import Mapspool from '../assets/logos/Mapspool.png';
 import Math from '../assets/logos/Math.png';
+import Mbs from '../assets/logos/Mbs.png';
 import Media from '../assets/logos/Media.png';
 import Mer from '../assets/logos/Mer.png';
 import Merpool from '../assets/logos/Merpool.png';
@@ -448,6 +449,7 @@ function MarketSelector({
     'MAPSPOOL/USDC' : Mapspool,
     'MNDE/mSOL' : Mnde,
     'MATH/USDC' : Math,
+    'MBS/USDC' : Mbs,
     'MEDIA/USDC' : Media,
     'MER/USDC' : Mer,
     'MERPOOL/USDC' : Merpool,

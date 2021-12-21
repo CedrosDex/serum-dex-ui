@@ -95,6 +95,7 @@ import Mana from '../assets/logos/Mana.png';
 import Maps from '../assets/logos/Maps.png';
 import Mapspool from '../assets/logos/Mapspool.png';
 import Math from '../assets/logos/Math.png';
+import Mbs from '../assets/logos/Mbs.png';
 import Media from '../assets/logos/Media.png';
 import Mer from '../assets/logos/Mer.png';
 import Merpool from '../assets/logos/Merpool.png';
@@ -408,6 +409,7 @@ export default function StandaloneBalancesDisplay() {
     'MAPS' : Maps,
     'MAPSPOOL' : Mapspool,
     'MATH' : Math,
+    'MBS' : Mbs,
     'MEDIA' : Media,
     'MER' : Mer,
     'MERPOOL' : Merpool,
