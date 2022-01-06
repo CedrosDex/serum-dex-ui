@@ -53,7 +53,6 @@ const EXTERNAL_LINKS = {
   '/nfts': 'https://nfts.cedros.io',
   '/learn': 'https://docs.cedros.io',
 
-
 };
 
 export default function TopBar() {
@@ -184,6 +183,15 @@ export default function TopBar() {
                   rel="noopener noreferrer"
                 >
                   PERPS
+                </a>
+          </Menu.Item>
+          <Menu.Item key='/options' style={{ margin: '0 10px 0 20px', letterSpacing: 1 }}>
+                <a
+                  href={EXTERNAL_LINKS['/options']}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {language === 'en' ? 'OPTIONS' : 'OPCIONES'}
                 </a>
           </Menu.Item>
           {!searchFocussed && (
