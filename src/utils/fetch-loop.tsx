@@ -135,13 +135,13 @@ class FetchLoopInternal<T = any> {
 
         // Don't do any refreshing for the first five seconds, to make way for other things to load.
         const timeSincePageLoad = +new Date() - +pageLoadTime;
-        if (timeSincePageLoad < 5000) {
-          waitTime += 5000 - timeSincePageLoad / 2;
+        if (timeSincePageLoad < 4000) {
+          waitTime += 4000 - timeSincePageLoad / 2;
         }
 
         // Refresh background pages slowly.
         if (document.visibilityState === 'hidden') {
-          waitTime = 60000;
+          waitTime = 40000;
         } else if (!document.hasFocus()) {
           waitTime *= 1.5;
         }
@@ -196,7 +196,7 @@ const globalLoops = new FetchLoops();
 export function useAsyncData<T = any>(
   asyncFn: () => Promise<T>,
   cacheKey: any,
-  { refreshInterval = 60000, refreshIntervalOnError = null } = {},
+  { refreshInterval = 40000, refreshIntervalOnError = null } = {},
   cacheNullValues: Boolean = true,
 ): [null | undefined | T, boolean] {
   const [, rerender] = useReducer((i) => i + 1, 0);

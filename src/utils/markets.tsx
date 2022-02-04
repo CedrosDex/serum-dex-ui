@@ -150,10 +150,10 @@ const MarketContext: React.Context<null | MarketContextValues> = React.createCon
   null,
 );
 
-const _VERY_SLOW_REFRESH_INTERVAL = 5000 * 1000;
+const _VERY_SLOW_REFRESH_INTERVAL = 4000 * 1000;
 
 // For things that don't really change
-const _SLOW_REFRESH_INTERVAL = 5 * 1000;
+const _SLOW_REFRESH_INTERVAL = 4 * 1000;
 
 // For things that change frequently
 const _FAST_REFRESH_INTERVAL = 1000;
@@ -748,7 +748,7 @@ export const useAllOpenOrders = (): {
         setLoaded(false);
         const _openOrders: { orders: Order[]; marketAddress: string }[] = [];
         const getOpenOrdersForMarket = async (marketInfo: MarketInfo) => {
-          await sleep(1000 * Math.random()); // Try not to hit rate limit
+          await sleep(700 * Math.random()); // Try not to hit rate limit
           try {
             const market = await Market.load(
               connection,
@@ -759,7 +759,7 @@ export const useAllOpenOrders = (): {
             const orders = await market.loadOrdersForOwner(
               connection,
               wallet?.publicKey,
-              30000,
+              20000,
             );
             _openOrders.push({
               orders: orders,

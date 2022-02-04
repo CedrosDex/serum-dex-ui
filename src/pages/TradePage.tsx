@@ -6,46 +6,63 @@ import UserInfoTable from '../components/UserInfoTable';
 import StandaloneBalancesDisplay from '../components/StandaloneBalancesDisplay';
 import Oneinch from '../assets/logos/1inch.png';
 import Aave from '../assets/logos/Aave.png';
+import Aart from '../assets/logos/Aart.png';
 import Abr from '../assets/logos/Abr.png';
+import Acm from '../assets/logos/Acm.png';
+import Ageur from '../assets/logos/agEur.png';
 import Akro from '../assets/logos/Akro.png';
 import Aleph from '../assets/logos/Aleph.png';
 import Alm from '../assets/logos/Alm.png';
 import Apt from '../assets/logos/Apt.png';
 import Atlas from '../assets/logos/Atlas.png';
+import Ats from '../assets/logos/Ats.png';
 import Aury from '../assets/logos/Aury.png';
+import Avax from '../assets/logos/Avax.png';
 import Axs from '../assets/logos/Axs.png';
-import Block from '../assets/logos/Block.png';
+import Basis from '../assets/logos/Basis.png';
 import Bmbo from '../assets/logos/Bmbo.png';
-import Bnb from '../assets/logos/Bnb.png';
-import Boku from '../assets/logos/Boku.png';
 import Blt from '../assets/logos/Blt.png';
+import Block from '../assets/logos/Block.png';
+import Bnb from '../assets/logos/Bnb.png';
 import Bop from '../assets/logos/Bop.png';
+import Bot from '../assets/logos/Bot.png';
+import Boku from '../assets/logos/Boku.png';
 import Btc from '../assets/logos/Btc.png';
 import Cato from '../assets/logos/Cato.png';
 import Cave from '../assets/logos/Cave.png';
 import Cel from '../assets/logos/Cel.png';
 import Cheems from '../assets/logos/Cheems.png';
 import Chicks from '../assets/logos/Chicks.png';
+import Cmfi from '../assets/logos/Cmfi.png';
 import Comp from '../assets/logos/Comp.png';
 import Cope from '../assets/logos/Cope.png';
 import Cream from '../assets/logos/Cream.png';
 import Crp from '../assets/logos/Crp.png';
 import Crwny from '../assets/logos/Crwny.png';
 import Cwar from '../assets/logos/Cwar.png';
+import Cwm from '../assets/logos/Cwm.png';
 import Cys from '../assets/logos/Cys.png';
 import Dape from '../assets/logos/Dape.png';
 import Dateicon from '../assets/logos/Date.png';
 import Dfl from '../assets/logos/Dfl.png';
+import Dio from '../assets/logos/Dio.png';
+import Dogo from '../assets/logos/Dogo.png';
 import Dxl from '../assets/logos/Dxl.png';
 import Dydx from '../assets/logos/Dydx.png';
 import Eth from '../assets/logos/Eth.png';
+import Fab from '../assets/logos/Fab.png';
+import Fcon from '../assets/logos/Fcon.png';
 import Fida from '../assets/logos/Fida.png';
 import Floof from '../assets/logos/Floof.png';
+import Flwr from '../assets/logos/Flwr.png';
 import Fries from '../assets/logos/Fries.png';
+import Frkt from '../assets/logos/Frkt.png';
 import Front from '../assets/logos/Front.png';
 import Ftr from '../assets/logos/Ftr.png';
 import Ftt from '../assets/logos/Ftt.png';
+import Gari from '../assets/logos/Gari.png';
 import Gene from '../assets/logos/Gene.png';
+import Ggsg from '../assets/logos/Ggsg.png';
 import Gofx from '../assets/logos/Gofx.png';
 import God from '../assets/logos/God.png';
 import Grape from '../assets/logos/Grape.png';
@@ -74,6 +91,7 @@ import Lua from '../assets/logos/Lua.png';
 import Mana from '../assets/logos/Mana.png';
 import Maps from '../assets/logos/Maps.png';
 import Mapspool from '../assets/logos/Mapspool.png';
+import Matic from '../assets/logos/Matic.png';
 import Math from '../assets/logos/Math.png';
 import Mbs from '../assets/logos/Mbs.png';
 import Media from '../assets/logos/Media.png';
@@ -85,6 +103,7 @@ import Mngo from '../assets/logos/Mngo.png';
 import Mola from '../assets/logos/Mola.png';
 import Msol from '../assets/logos/Msol.png';
 import Nfd from '../assets/logos/Nfd.png';
+import Nos from '../assets/logos/Nos.png';
 import Oogi from '../assets/logos/Oogi.png';
 import Orca from '../assets/logos/Orca.png';
 import Oxs from '../assets/logos/Oxs.png';
@@ -95,7 +114,11 @@ import Perp from '../assets/logos/Perp.png';
 import People from '../assets/logos/People.png';
 import Polis from '../assets/logos/Polis.png';
 import Port from '../assets/logos/Port.png';
+import Prism from '../assets/logos/Prism.png';
+import Prms from '../assets/logos/Prms.png';
 import Prt from '../assets/logos/Prt.png';
+import Psk from '../assets/logos/Psk.png';
+import Psy from '../assets/logos/Psy.png';
 import Ray from '../assets/logos/Ray.png';
 import Raypool from '../assets/logos/Raypool.png';
 import Real from '../assets/logos/Real.png';
@@ -106,6 +129,7 @@ import Renfil from '../assets/logos/Renfil.png';
 import Renluna from '../assets/logos/Renluna.png';
 import Renzec from '../assets/logos/Renzec.png';
 import Rin from '../assets/logos/Rin.png';
+import Roll from '../assets/logos/Roll.png';
 import Rope from '../assets/logos/Rope.png';
 import Rsr from '../assets/logos/Rsr.png';
 import Runicon from '../assets/logos/Run.png';
@@ -113,31 +137,40 @@ import Sail from '../assets/logos/Sail.png';
 import Samo from '../assets/logos/Samo.png';
 import Sand from '../assets/logos/Sand.png';
 import Sbr from '../assets/logos/Sbr.png';
+import Scy from '../assets/logos/Scy.png';
 import Seco from '../assets/logos/Seco.png';
+import Shdw from '../assets/logos/Shdw.png';
 import Shib from '../assets/logos/Shib.png';
 import Shill from '../assets/logos/Shill.png';
+import Slc from '../assets/logos/Slc.png';
 import Slim from '../assets/logos/Slim.png';
 import Slnd from '../assets/logos/Slnd.png';
 import Slrs from '../assets/logos/Slrs.png';
 import Slx from '../assets/logos/Slx.png';
+import Smbd from '../assets/logos/Smbd.png';
 import Sny from '../assets/logos/Sny.png';
 import Snypool from '../assets/logos/Snypool.png';
 import Sol from '../assets/logos/Sol.png';
 import Solc from '../assets/logos/Solc.png';
 import Solape from '../assets/logos/Solape.png';
+import Solar from '../assets/logos/Solar.png';
 import Soldoge from '../assets/logos/Soldoge.png';
 import Solpad from '../assets/logos/Solpad.png';
+import Solx from '../assets/logos/Solx.png';
 import Sonar from '../assets/logos/Sonar.png';
 import Srm from '../assets/logos/Srm.png';
+import Ssu from '../assets/logos/Ssu.png';
 import Stars from '../assets/logos/Stars.png';
 import Step from '../assets/logos/Step.png';
 import Str from '../assets/logos/Str.png';
 import Stsol from '../assets/logos/Stsol.png';
 import Sunny from '../assets/logos/Sunny.png';
 import Sushi from '../assets/logos/Sushi.png';
+import Svt from '../assets/logos/Svt.png';
 import Swoledoge from '../assets/logos/Swoledoge.png';
 import Sxp from '../assets/logos/Sxp.png';
 import Syp from '../assets/logos/Syp.png';
+import Tiny from '../assets/logos/Tiny.png';
 import Tomo from '../assets/logos/Tomo.png';
 import Tox from '../assets/logos/Trollbox.png';
 import Ttt from '../assets/logos/Ttt.png';
@@ -145,7 +178,10 @@ import Tulip from '../assets/logos/Tulip.png';
 import Ubxt from '../assets/logos/Ubxt.png';
 import Uni from '../assets/logos/Uni.png';
 import Ups from '../assets/logos/Ups.png';
+import Usdc from '../assets/logos/Usdc.png';
 import Usdt from '../assets/logos/Usdt.png';
+import Ust from '../assets/logos/Ust.png';
+import Uxp from '../assets/logos/Uxp.png';
 import Vi from '../assets/logos/Vi.png';
 import Wag from '../assets/logos/Wag.png';
 import Woo from '../assets/logos/Woo.png';
@@ -377,48 +413,66 @@ function MarketSelector({
   const Logos = {
     '1INCH/USDC' : Oneinch,
     'AAVE/USDC' : Aave,
+    'AART/USDC' : Aart,
     'ABR/USDC' : Abr,
+    'ACM/USDC' : Acm,
+    'agEUR/USDC' : Ageur,
     'AKRO/USDC' : Akro,
     'ALEPH/USDC' : Aleph,
     'ALM/USDC' : Alm,
     'APT/USDC' : Apt,
     'ATLAS/USDC' : Atlas,
+    'ATS/USDC' : Ats,
     'AURY/USDC' : Aury,
+    'AVAX/USDC' : Avax,
     'AXS/USDC' : Axs,
+    'BASIS/USDC' : Basis,
     'BLOCK/USDC' : Block,
     'BLT/USDC' : Blt,
     'BMBO/USDC' : Bmbo,
     'BNB/USDC' : Bnb,
+    'BOT/USDC' : Bot,
     'BOKU/USDC' : Boku,
     'BOP/USDC' : Bop,
     'BTC/USDT' : Btc,
     'BTC/USDC' : Btc,
+    'BTC/UST' : Btc,
     'CATO/USDC' : Cato,
     'CAVE/USDC' : Cave,
     'CEL/USDC' : Cel,
     'CHEEMS/USDC' : Cheems,
     'CHICKS/USDC' : Chicks,
+    'CMFI/USDC' : Cmfi,
     'COMP/USDC' : Comp,
     'COPE/USDC' : Cope,
     'CREAM/USDC' : Cream,
     'CRP/USDC' : Crp,
     'CRWNY/USDC' : Crwny,
     'CWAR/USDC' : Cwar,
+    'CWM/USDC' : Cwm,
     'CYS/USDC' : Cys,
     'DAPE/USDC' : Dape,
     'DATE/USDC' : Dateicon,
+    'DIO/USDT' : Dio,
+    'DOGO/USDC' : Dogo,
     'DFL/USDC' : Dfl,
     'DXL/USDC' : Dxl,
     'DYDX/USDC' : Dydx,
     'ETH/USDT' : Eth,
     'ETH/USDC' : Eth,
+    'FAB/USDC' : Fab,
+    'FCON/USDC' : Fcon,
     'FIDA/USDC' : Fida,
     'FLOOF/USDC' : Floof,
+    'FLWR/USDC' : Flwr,
     'FRIES/USDC' : Fries,
+    'FRKT/USDC' : Frkt,
     'FRONT/USDC' : Front,
     'FTR/USDC' : Ftr,
     'FTT/USDC' : Ftt,
+    'GARI/USDC' : Gari,
     'GENE/USDC' : Gene,
+    'GGSG/USDC' : Ggsg,
     'GOD/MIX' : God,
     'GOFX/USDC' : Gofx,
     'GRAPE/USDC' : Grape,
@@ -448,6 +502,7 @@ function MarketSelector({
     'MAPS/USDC' : Maps,
     'MAPSPOOL/USDC' : Mapspool,
     'MNDE/mSOL' : Mnde,
+    'MATIC/USDC' : Matic,
     'MATH/USDC' : Math,
     'MBS/USDC' : Mbs,
     'MEDIA/USDC' : Media,
@@ -458,6 +513,7 @@ function MarketSelector({
     'MOLA/USDC' : Mola,
     'mSOL/USDC' : Msol,
     'NFD/USDC' : Nfd,
+    'NOS/USDC' : Nos,
     'OOGI/USDC' : Oogi,
     'ORCA/USDC' : Orca,
     'OXS/USDC' : Oxs,
@@ -468,11 +524,16 @@ function MarketSelector({
     'PEOPLE/USDC' : People,
     'POLIS/USDC' : Polis,
     'PORT/USDC' : Port,
+    'PRISM/USDC' : Prism,
+    'PRMS/USDC' : Prms,
     'PRT/USDC' : Prt,
+    'PSK/USDC' : Psk,
+    'PSY/USDC' : Psy,
     'RAY/USDC' : Ray,
     'RAYPOOL/USDC' : Raypool,
     'REAL/USDC' : Real,
     'RIN/USDC' : Rin,
+    'ROLL/USDC' : Roll,
     'ROPE/USDC' : Rope,
     'RSR/USDC' : Rsr,
     'RUN/USDC' : Runicon,
@@ -480,31 +541,41 @@ function MarketSelector({
     'SAMO/USDC' : Samo,
     'SAND/USDC' : Sand,
     'SBR/USDC' : Sbr,
+    'SCY/USDC' : Scy,
     'SECO/USDC' : Seco,
+    'SHDW/USDC' : Shdw,
     'SHIB/USDC' : Shib,
     'SHILL/USDC' : Shill,
+    'SLC/USDC' : Slc,
     'SLIM/SOL' : Slim,
     'SLND/USDC' : Slnd,
     'SLRS/USDC' : Slrs,
     'SLX/USDC' : Slx,
+    'SMBD/USDC' : Smbd,
     'SNY/USDC' : Sny,
     'SNYPOOL/USDC' : Snypool,
     'SOL/USDC' : Sol,
     'SOLC/USDC' : Solc,
+    'SOL/UST' : Sol,
     'SOLAPE/USDC' : Solape,
+    'SOLAR/USDC' : Solar,
     'SOLDOGE/USDC' : Soldoge,
     'SOLPAD/USDC' : Solpad,
+    'SOLX/USDC' : Solx,
     'SONAR/USDC' : Sonar,
     'SRM/USDC' : Srm,
+    'SSU/SOL' : Ssu,
     'STARS/USDC' : Stars,
     'STEP/USDC' : Step,
     'STR/USDC' : Str,
     'stSOL/USDC' : Stsol,
     'SUNNY/USDC' : Sunny,
     'SUSHI/USDC' : Sushi,
+    'SVT/USDC' : Svt,
     'SWOLEDOGE/USDC' : Swoledoge,
     'SXP/USDC' : Sxp,
     'SYP/USDC' : Syp,
+    'TINY/USDC' : Tiny,
     'TOMO/USDC' : Tomo,
     'TOX/USDC' : Tox,
     'TTT/USDC' : Ttt,
@@ -513,6 +584,8 @@ function MarketSelector({
     'UNI/USDC' : Uni,
     'UPS/USDC' : Ups,
     'USDT/USDC' : Usdt,
+    'UST/USDC' : Ust,
+    'UXP/USDC' : Uxp,
     'VI/USDC' : Vi,
     'WAG/USDC' : Wag,
     'WOO/USDC' : Woo,

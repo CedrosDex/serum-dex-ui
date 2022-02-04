@@ -128,7 +128,7 @@ export function useMintToTickers(): { [mint: string]: string } {
   }, [customMarkets.length]);
 }
 
-const _VERY_SLOW_REFRESH_INTERVAL = 5000 * 1000;
+const _VERY_SLOW_REFRESH_INTERVAL = 2000 * 1000;
 
 // todo: move this to using mints stored in static market infos once custom markets support that.
 export function useMintInfos(): [
